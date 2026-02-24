@@ -161,6 +161,26 @@
       }
     ]
   },
+  "individualConsultation": {
+    "heading": "Consultas individuales",
+    "intro": "Planes adaptados a ti creados desde un punto de vista integrativo, con un abordaje físico, emocional, funcional y cotidiano.",
+    "approach": "Con un seguimiento constante, utilizando prácticas basadas en la evidencia y con colaboración médica de alta precisión.",
+    "combined": "Combinamos: PNIE, fisioterapia, osteopatía, coaching, inteligencia emocional y PNL.",
+    "referral": "Y si tras tu valoración lo consideramos oportuno, te derivamos al profesional sanitario que pueda ayudarte.",
+    "purpose": "Para empezar, valorar tu caso o acompañamientos puntuales.",
+    "session": {
+      "title": "Sesión individual online",
+      "features": [
+        "Análisis detallado de tu situación",
+        "Orientación personalizada"
+      ],
+      "price": "110",
+      "currency": "€",
+      "priceLabel": "/ sesión",
+      "booking": "Reserva con 48 h de antelación",
+      "cta": "Reservar sesión"
+    }
+  },
   "guarantees": {
     "heading": "Marco de trabajo",
     "subheading": "Trabajo dentro de mi ámbito competencial como profesional sanitaria. Esto es lo que puedes esperar.",

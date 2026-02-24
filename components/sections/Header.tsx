@@ -73,7 +73,7 @@ export function Header() {
             </a>
           </div>
 
-          <BookCallLink size="sm" variant="dark">{t('cta')}</BookCallLink>
+          <BookCallLink size="sm" variant="dark" goal="bookCallHeader">{t('cta')}</BookCallLink>
         </div>
       </div>
     </header>

@@ -161,6 +161,26 @@
       }
     ]
   },
+  "individualConsultation": {
+    "heading": "Individual consultations",
+    "intro": "Personalized plans built from an integrative perspective, with a physical, emotional, functional and everyday approach.",
+    "approach": "With ongoing follow-up, using evidence-based practices and high-precision medical collaboration.",
+    "combined": "We combine: PNEI, physiotherapy, osteopathy, coaching, emotional intelligence and NLP.",
+    "referral": "And if after your assessment we consider it appropriate, we will refer you to the healthcare professional best suited to help you.",
+    "purpose": "To get started, assess your case, or for one-off sessions.",
+    "session": {
+      "title": "Individual online session",
+      "features": [
+        "Detailed analysis of your situation",
+        "Personalized guidance"
+      ],
+      "price": "110",
+      "currency": "€",
+      "priceLabel": "/ session",
+      "booking": "Book at least 48 hours in advance",
+      "cta": "Book a session"
+    }
+  },
   "guarantees": {
     "heading": "Professional framework",
     "subheading": "I work within my professional scope as a licensed health practitioner. Here is what you can expect.",

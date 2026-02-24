@@ -82,8 +82,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         : 'Cellular Optimization · Integrative Health · PNEI',
     },
     robots: {
-      index: true,
-      follow: true,
+      index: false,
+      follow: false,
     },
     alternates: {
       canonical: `https://www.mindyourcells.es/${locale}`,

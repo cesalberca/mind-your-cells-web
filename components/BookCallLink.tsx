@@ -1,9 +1,9 @@
 'use client'
 
 import type React from 'react'
+import { trackGoal, type FathomGoal } from '@/lib/fathom-goals'
 
-// TODO: Replace with actual booking URL (Calendly / Cal.com)
-const BOOK_CALL_URL = '#book-call'
+const BOOK_CALL_URL = 'https://calendar.app.google/yytTRx1Xr5C17CtY8'
 
 const sizes = {
   sm: 'text-[0.65rem] tracking-widest px-4 py-2',
@@ -21,11 +21,14 @@ const variants = {
 type BookCallLinkProps = Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'href' | 'target' | 'rel'> & {
   size?: keyof typeof sizes
   variant?: keyof typeof variants
+  goal?: FathomGoal
 }
 
 export function BookCallLink({
   size = 'md',
   variant = 'dark',
+  goal,
+  onClick,
   className,
   ...rest
 }: BookCallLinkProps) {
@@ -38,12 +41,18 @@ export function BookCallLink({
     .filter(Boolean)
     .join(' ')
 
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (goal) trackGoal(goal)
+    onClick?.(e)
+  }
+
   return (
     <a
       href={BOOK_CALL_URL}
       target="_blank"
       rel="noopener noreferrer"
       className={classes}
+      onClick={handleClick}
       {...rest}
     />
   )

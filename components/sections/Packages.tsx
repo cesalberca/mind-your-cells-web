@@ -32,22 +32,19 @@ export function Packages() {
           {items.map((pkg) => (
             <div
               key={pkg.id}
-              className={`relative flex flex-col gap-6 p-8 transition-colors ${
+              className={`flex flex-col gap-6 p-8 transition-colors ${
                 pkg.popular
                   ? 'bg-white'
                   : 'bg-cream hover:bg-white'
               }`}
             >
-              {pkg.popular && (
-                <div className="absolute top-8 right-8">
-                  <span className="bg-terracotta text-cream text-[0.6rem] font-sans font-medium tracking-widest uppercase px-3 py-1">
+              <div>
+                {pkg.popular && (
+                  <span className="inline-block bg-terracotta text-cream text-[0.6rem] font-sans font-medium tracking-widest uppercase px-3 py-1 mb-3">
                     {t('popular')}
                   </span>
-                </div>
-              )}
-
-              <div>
-                <h3 className="text-stone font-semibold text-xl leading-snug mb-3 pr-20">{pkg.name}</h3>
+                )}
+                <h3 className="text-stone font-semibold text-xl leading-snug mb-3">{pkg.name}</h3>
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="text-soft-terracotta text-xs font-sans tracking-widest uppercase">
                     {pkg.duration}
@@ -87,7 +84,7 @@ export function Packages() {
                 <p className="text-stone/30 text-xs leading-relaxed italic font-sans">{pkg.guarantee}</p>
               </div>
 
-              <BookCallLink size="md" variant="light" className="justify-center w-full text-center">
+              <BookCallLink size="md" variant="light" goal="bookCallPackage" className="justify-center w-full text-center">
                 {t('cta')}
               </BookCallLink>
             </div>
