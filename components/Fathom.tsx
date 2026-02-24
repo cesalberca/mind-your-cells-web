@@ -9,7 +9,7 @@ function TrackPageView() {
   const searchParams = useSearchParams()
 
   useEffect(() => {
-    load('HGXWTIRF', {
+    load('RMKDEBMD', {
       auto: false,
     })
   }, [])
