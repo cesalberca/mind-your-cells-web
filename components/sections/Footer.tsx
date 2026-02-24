@@ -1,118 +1,31 @@
-import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import { SocialLinks } from '@/components/SocialLinks'
 
 export function Footer() {
+  const t = useTranslations('footer')
+
   return (
-    <footer className="py-12 px-4 border-t border-gold/10 flex justify-center">
-      <div className="max-w-4xl mx-auto space-y-6 flex flex-col items-center justify-center">
-        <a
-          href="https://savvily.es/?utm_source=softwarecafrers.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block hover:opacity-80 transition-opacity"
-        >
-          <Image
-            src="/savvily.png"
-            alt="Savvily - Conocimiento que compartir"
-            width={200}
-            height={100}
-            className="w-auto h-10 mx-auto"
-          />
-        </a>
-
-        <div className="text-white/50 text-sm space-y-2">
-          <p>
-            <span className="text-gold/80 font-semibold">
-              Software Cafrers: Haciendo Código que Haría Vomitar a una Cabra
-            </span>
-          </p>
-          <p>
-            Incluye Prólogo de{' '}
-            <a
-              href="https://www.carlosble.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gold/60 hover:text-gold underline underline-offset-4 transition-colors"
-            >
-              Carlos Blé
-            </a>{' '}
-            y Epílogo de{' '}
-            <a
-              href="https://adrianferrera.dev/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gold/60 hover:text-gold underline underline-offset-4 transition-colors"
-            >
-              Adrián Ferrera
-            </a>
-          </p>
-          <p>
-            por{' '}
-            <a
-              href="https://cesalberca.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gold/60 hover:text-gold underline underline-offset-4 transition-colors"
-            >
-              César Alberca
-            </a>
-          </p>
-          <p>
-            Ilustraciones por{' '}
-            <a
-              href="https://aldariasart.es"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gold/60 hover:text-gold underline underline-offset-4 transition-colors"
-            >
-              Marta Aldarias Villacañas
-            </a>{' '}
-            (
-            <a
-              href="https://instagram.com/aldarias_art"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gold/60 hover:text-gold underline underline-offset-4 transition-colors"
-            >
-              @aldarias_art
-            </a>
-            )
-          </p>
-          <p>
-            Publicado por{' '}
-            <a
-              href="https://savvily.es/?utm_source=softwarecafrers.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gold/60 hover:text-gold underline underline-offset-4 transition-colors"
-            >
-              Savvily
-            </a>
-          </p>
-          <p>
-            Código{' '}
-            <a
-              href="https://github.com/cesalberca/software-cafrers-web"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gold/60 hover:text-gold underline underline-offset-4 transition-colors"
-            >
-              Open Source
-            </a>
-          </p>
-
-          <p className="text-white/20 text-xs max-w-lg mx-auto mt-4">
-            Ningún animal fue dañado durante la creación de este libro. Varios desarrolladores sí, pero eso es
-            irrelevante. Todas las reseñas son ficticias. Los nombres de las publicaciones están mal escritos a
-            propósito. Si has llegado hasta aquí, probablemente deberías comprar el libro.
-          </p>
+    <footer className="py-16 px-6 border-t border-ceramic/8 bg-stone flex justify-center">
+      <div className="max-w-4xl mx-auto w-full space-y-8 flex flex-col items-center">
+        <div className="text-center">
+          <p className="text-ceramic font-semibold text-lg" style={{ fontFamily: 'var(--font-display, serif)' }}>{t('brand')}</p>
+          <p className="text-ceramic/30 text-xs font-sans tracking-widest uppercase mt-1">{t('tagline')}</p>
         </div>
 
-        <SocialLinks className="pt-2" />
+        <div className="text-center space-y-1">
+          <p className="text-ceramic/50 text-sm font-sans font-medium">{t('practitioner')}</p>
+          <p className="text-ceramic/25 text-xs font-sans">{t('credential')}</p>
+        </div>
 
-        <div className="pt-4 border-t border-gold/5">
-          <p className="text-white/15 text-xs">
-            &copy; {new Date().getFullYear()} César Alberca. Todos los derechos reservados. Publicado por Savvily.
+        <SocialLinks variant="dark" />
+
+        <p className="text-ceramic/20 text-xs max-w-md mx-auto text-center leading-relaxed font-sans">
+          {t('legal')}
+        </p>
+
+        <div className="border-t border-ceramic/8 w-full pt-6 text-center">
+          <p className="text-ceramic/15 text-xs font-sans">
+            {t('copyright', { year: new Date().getFullYear() })}
           </p>
         </div>
       </div>

@@ -1,0 +1,261 @@
+{
+  "header": {
+    "brand": "Mind Your Cells",
+    "tagline": "Finessing your Cellular Health",
+    "nav": {
+      "about": "Sobre mí",
+      "programs": "Programas",
+      "testimonials": "Testimonios",
+      "faq": "FAQ"
+    },
+    "cta": "Reservar llamada"
+  },
+  "hero": {
+    "headline": "Cuando te entiendes,",
+    "headlineAccent": "todo encaja.",
+    "subheadline": "Salud es lo que el cuerpo te devuelve cuando le das lo que verdaderamente necesita. Conectamos los puntos que otros miran por separado. Desde tus células a tu día a día.",
+    "cta": "Reservar llamada gratuita",
+    "credentialLabel": "Adriana Blanco Durán",
+    "credentials": "Fisioterapeuta colegiada · PNIE · Osteopatía · Coaching",
+    "scrollHint": "Descubre cómo"
+  },
+  "banner": {
+    "items": [
+      "Optimización Celular",
+      "PNIE",
+      "Bienestar",
+      "Energía",
+      "Salud Integrativa",
+      "Crononutrición",
+      "Inflamación",
+      "Microbiota",
+      "Claridad Mental",
+      "Hábitos de Vida",
+      "Medicina Celular",
+      "Estrés"
+    ]
+  },
+  "problem": {
+    "heading": "El diagnóstico es solo el principio",
+    "subheading": "Entre lo que el médico indica y lo que ocurre en tu vida cotidiana, existe un espacio que suele quedar sin acompañamiento.",
+    "items": [
+      {
+        "title": "\"No sé qué comprar\"",
+        "description": "Saliste de consulta motivado, pero sin saber qué productos elegir ni cómo leer una etiqueta o qué distribuidores priorizar."
+      },
+      {
+        "title": "\"¿Cómo organizo mis comidas?\"",
+        "description": "No sabes cómo aplicar la crononutrición en tu jornada real, con trabajo, familia y los ritmos que ya tienes."
+      },
+      {
+        "title": "\"Mi entorno me sabotea\"",
+        "description": "Cosmética, calidad del agua, luz nocturna, estrés mantenido… factores que siguen enviando señales de irritabilidad celular."
+      },
+      {
+        "title": "\"Me siento abrumado\"",
+        "description": "Percibes más las limitaciones que las posibilidades. Cambiar hábitos arraigados parece imposible y no sabes por dónde empezar."
+      }
+    ],
+    "solution": "La información es poder. Cuando la tienes, puedes elegir. Mind Your Cells conecta los puntos que otros miran por separado para convertir el conocimiento en acción y el protocolo en vida real."
+  },
+  "about": {
+    "heading": "Sobre mí",
+    "manifesto": "Mind Your Cells es sostén, conocimiento y criterio. Hablar de salud desde la célula es hablar de eficiencia, responsabilidad y respeto profundo por el cuerpo.",
+    "bio1": "Soy fisioterapeuta colegiada (nº 9307) con más de 10 años de experiencia clínica, osteópata con seis años de formación de posgrado, y especialista en psiconeuroinmunoendocrinología (PNIE), formada con Xevi Verdaguer. También me he formado en coaching e inteligencia emocional con Joaquina Fernández (Instituto de Humanidades y Negocios).",
+    "bio2": "Conectamos los puntos que otros miran por separado. De lo pequeño a lo grande. Desde tus células a tu día a día. Para que dejes de preguntarte si lo que estás haciendo te ayuda o no, y empieces a entenderte para actuar a tu favor.",
+    "credentials": [
+      "Fisioterapeuta colegiada nº 9307",
+      "Osteopatía (6 años de posgrado)",
+      "PNIE — formada con Xevi Verdaguer",
+      "Coaching e Inteligencia Emocional",
+      "Grado en Nutrición y Dietética (en curso)"
+    ],
+    "approachTitle": "Mi método",
+    "approachItems": [
+      {
+        "title": "Sistémico",
+        "description": "La salud es un todo global formado por sistemas. Todo encaja cuando tienes la información adecuada."
+      },
+      {
+        "title": "Integrativo",
+        "description": "Abordaje físico, emocional, funcional y de hábitos de vida desde la célula hacia afuera."
+      },
+      {
+        "title": "Personalizado",
+        "description": "Planes adaptados a tu realidad, no plantillas genéricas. Tu cuerpo, tu ritmo."
+      },
+      {
+        "title": "Con criterio",
+        "description": "Prácticas basadas en evidencia científica y supervisión profesional, siempre dentro del marco legal."
+      }
+    ]
+  },
+  "packages": {
+    "heading": "Programas",
+    "subheading": "Elige el acompañamiento que mejor se adapta a tu momento",
+    "cta": "Reservar llamada",
+    "popular": "Más popular",
+    "items": [
+      {
+        "id": "implementacion",
+        "name": "Programa de Implementación Celular",
+        "duration": "4 semanas",
+        "format": "Acompañamiento 1:1 generalista",
+        "price": "690",
+        "currency": "€",
+        "features": [
+          "Guía práctica de compra en supermercados",
+          "Lista de distribuidores de carne y verduras",
+          "Formación en lectura de etiquetas",
+          "Organización de menús",
+          "Introducción a la crononutrición aplicada",
+          "Gestión básica del estrés",
+          "Depuración inicial del entorno doméstico",
+          "Bibliografía recomendada",
+          "Acceso a contenido digital grabado"
+        ],
+        "guarantee": "Si aplicas las recomendaciones acordadas y no percibes mejora subjetiva en energía o claridad mental, ampliamos el acompañamiento 2 semanas sin coste adicional."
+      },
+      {
+        "id": "personalizado",
+        "name": "Acompañamiento Celular Personalizado",
+        "duration": "8 semanas",
+        "format": "Acompañamiento 1:1 individualizado",
+        "price": "2.400",
+        "currency": "€",
+        "popular": true,
+        "note": "Disponible en 3 plazos",
+        "features": [
+          "Todo lo del Programa de Implementación",
+          "6 sesiones individuales por videollamada",
+          "Plan práctico adaptado a tu realidad",
+          "Seguimiento semanal",
+          "Revisión de compra real y entorno doméstico",
+          "Estrategias psicológicas para sostener cambios",
+          "Coordinación con el protocolo de salud",
+          "Carpeta digital personalizada",
+          "Seguimiento con indicadores y gráficas",
+          "Checklist automatizado"
+        ],
+        "guarantee": "Si cumples el plan acordado y no se objetivan mejoras en los parámetros funcionales definidos, realizamos una sesión estratégica adicional sin coste."
+      },
+      {
+        "id": "integral",
+        "name": "Seguimiento Integral Celular",
+        "duration": "12 semanas",
+        "format": "Acompañamiento 1:1 intensivo",
+        "price": "6.500",
+        "originalPrice": "7.000",
+        "currency": "€",
+        "note": "Pago único · Ahorra 500 € — O en 3 plazos (7.000 € total)",
+        "features": [
+          "Todo lo del Acompañamiento Personalizado",
+          "Revisión conjunta de evolución",
+          "Ajustes progresivos en alimentación y entorno",
+          "Optimización de ritmos biológicos",
+          "Gestión avanzada del estrés",
+          "Supervisión estrecha de implementación",
+          "Plazas limitadas por trimestre"
+        ],
+        "guarantee": "Plazas limitadas por trimestre para garantizar la máxima calidad de acompañamiento."
+      }
+    ]
+  },
+  "guarantees": {
+    "heading": "Marco de trabajo",
+    "subheading": "Trabajo dentro de mi ámbito competencial como profesional sanitaria. Esto es lo que puedes esperar.",
+    "whatIDo": {
+      "title": "Lo que hago",
+      "items": [
+        "Educación para la salud",
+        "Asesoramiento en hábitos y estilo de vida",
+        "Orientación en crononutrición",
+        "Gestión del estrés",
+        "Ejercicio terapéutico",
+        "Acompañamiento conductual",
+        "Educación en higiene ambiental",
+        "Seguimiento funcional"
+      ]
+    },
+    "whatIDontDo": {
+      "title": "Lo que no hago",
+      "items": [
+        "Realizar diagnóstico médico",
+        "Prescribir fármacos",
+        "Modificar tratamientos médicos",
+        "Interpretar analíticas de forma independiente al médico",
+        "Indicar procedimientos invasivos"
+      ]
+    },
+    "conclusion": "Si la célula recibe señales constantes de irritabilidad, expresará inflamación. Si modulamos las señales que recibe, puede recuperar su autorregulación. Mind Your Cells facilita que crees el entorno biológico que permita que ese patrón se modifique."
+  },
+  "testimonials": {
+    "heading": "Lo que dicen",
+    "subheading": "Experiencias de personas que han implementado el protocolo",
+    "placeholders": [
+      {
+        "quote": "Tu testimonio podría estar aquí.",
+        "name": "Próximamente",
+        "detail": ""
+      },
+      {
+        "quote": "Los primeros testimonios están en camino.",
+        "name": "Próximamente",
+        "detail": ""
+      },
+      {
+        "quote": "¿Has pasado por el programa? Comparte tu experiencia.",
+        "name": "Próximamente",
+        "detail": ""
+      }
+    ]
+  },
+  "faq": {
+    "heading": "Preguntas frecuentes",
+    "subheading": "Todo lo que necesitas saber antes de dar el primer paso",
+    "items": [
+      {
+        "question": "¿Esto sustituye a mi médico o tratamiento?",
+        "answer": "No. Mind Your Cells es un complemento al tratamiento o protocolo médico, nunca un sustituto. Mi trabajo consiste en ayudarte a implementar en tu vida cotidiana lo que el médico ha indicado. No realizo diagnósticos ni modifico tratamientos."
+      },
+      {
+        "question": "¿Necesito seguir un protocolo médico previo para acceder?",
+        "answer": "No es imprescindible. Aunque el programa está especialmente diseñado para personas que ya tienen una indicación médica y necesitan ayuda para implementarla, también trabajo con personas que buscan optimizar su salud de forma preventiva. Si tienes dudas, reserva una llamada gratuita y lo valoramos juntos."
+      },
+      {
+        "question": "¿Cómo son las sesiones?",
+        "answer": "Las sesiones son individuales, por videollamada, en un espacio personalizado y sin prisa. La frecuencia y número de sesiones depende del programa elegido. Entre sesiones recibirás recursos, seguimiento y acompañamiento adaptado a tu ritmo."
+      },
+      {
+        "question": "¿Qué diferencia hay entre los tres programas?",
+        "answer": "La intensidad y profundidad del acompañamiento. El Programa de Implementación (4 semanas) cubre los fundamentos prácticos esenciales. El Acompañamiento Personalizado (8 semanas) incluye sesiones individuales y seguimiento semanal personalizado. El Seguimiento Integral (12 semanas) es el más intensivo, con ajustes progresivos y supervisión estrecha a lo largo de todo el proceso."
+      },
+      {
+        "question": "¿Puedo pagar a plazos?",
+        "answer": "El Acompañamiento Celular Personalizado (8 semanas) y el Seguimiento Integral Celular (12 semanas) están disponibles en 3 plazos. El Programa de Implementación Celular (4 semanas) requiere pago único. Además, si pagas el Seguimiento Integral en un solo pago, ahorras 500 € respecto al precio fraccionado. Consulta las condiciones durante la llamada de valoración gratuita."
+      },
+      {
+        "question": "¿Cuándo empezaré a notar resultados?",
+        "answer": "Depende de tu punto de partida y de la consistencia en la aplicación. Muchas personas perciben mejoras en energía y claridad mental en las primeras semanas. Los cambios celulares profundos son graduales y se consolidan a lo largo del programa."
+      },
+      {
+        "question": "¿Qué pasa si sigo el programa y no noto mejoras?",
+        "answer": "Cada programa incluye una garantía específica. Si cumples con el plan acordado y no percibes mejoras, ampliamos el acompañamiento o realizamos sesiones adicionales sin coste extra. Mi compromiso es contigo y con el proceso."
+      }
+    ]
+  },
+  "bookCall": {
+    "heading": "Da el primer paso",
+    "subheading": "Una llamada gratuita de 30 minutos para conocernos, entender tu situación y ver si podemos trabajar juntos. Sin presión. Sin compromiso.",
+    "cta": "Reservar llamada gratuita",
+    "note": "Gratuita · Sin compromiso · 30 minutos"
+  },
+  "footer": {
+    "brand": "Mind Your Cells",
+    "tagline": "Finessing your Cellular Health",
+    "practitioner": "Adriana Blanco Durán",
+    "credential": "Fisioterapeuta colegiada nº 9307",
+    "legal": "Todo el acompañamiento ofrecido por Mind Your Cells se presenta explícitamente como complemento al tratamiento médico, nunca como sustituto. No se realizan diagnósticos ni se prescriben tratamientos.",
+    "copyright": "© {year} Adriana Blanco Durán. Todos los derechos reservados."
+  }
+}

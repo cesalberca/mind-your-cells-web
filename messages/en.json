@@ -1,0 +1,261 @@
+{
+  "header": {
+    "brand": "Mind Your Cells",
+    "tagline": "Finessing your Cellular Health",
+    "nav": {
+      "about": "About me",
+      "programs": "Programs",
+      "testimonials": "Testimonials",
+      "faq": "FAQ"
+    },
+    "cta": "Book a call"
+  },
+  "hero": {
+    "headline": "When you understand yourself,",
+    "headlineAccent": "everything falls into place.",
+    "subheadline": "Health is what your body gives back when you give it what it truly needs. We connect the dots others look at separately. From your cells to your daily life.",
+    "cta": "Book a free call",
+    "credentialLabel": "Adriana Blanco Durán",
+    "credentials": "Licensed Physiotherapist · PNEI · Osteopathy · Coaching",
+    "scrollHint": "Discover how"
+  },
+  "banner": {
+    "items": [
+      "Cellular Optimization",
+      "PNEI",
+      "Wellbeing",
+      "Energy",
+      "Integrative Health",
+      "Chrononutrition",
+      "Inflammation",
+      "Microbiome",
+      "Mental Clarity",
+      "Life Habits",
+      "Cellular Medicine",
+      "Stress"
+    ]
+  },
+  "problem": {
+    "heading": "The diagnosis is just the beginning",
+    "subheading": "Between what the doctor recommends and what happens in your daily life, there is often a gap that goes unsupported.",
+    "items": [
+      {
+        "title": "\"I don't know what to buy\"",
+        "description": "You left the consultation motivated, but without knowing which products to choose, how to read labels, or which suppliers to prioritize."
+      },
+      {
+        "title": "\"How do I organize my meals?\"",
+        "description": "You don't know how to apply chrononutrition to your real daily routine, with work, family and your existing rhythms."
+      },
+      {
+        "title": "\"My environment is sabotaging me\"",
+        "description": "Cosmetics, water quality, evening light, ongoing stress… factors that keep sending signals of cellular irritability."
+      },
+      {
+        "title": "\"I feel overwhelmed\"",
+        "description": "You see limitations more than possibilities. Changing deep-rooted habits seems impossible and you don't know where to start."
+      }
+    ],
+    "solution": "Information is power. When you have it, you can choose. Mind Your Cells connects the dots others look at separately to turn knowledge into action and protocol into real life."
+  },
+  "about": {
+    "heading": "About me",
+    "manifesto": "Mind Your Cells is support, knowledge and discernment. Talking about health from the cell is talking about efficiency, responsibility and deep respect for the body.",
+    "bio1": "I am a licensed physiotherapist (no. 9307) with over 10 years of clinical experience, an osteopath with six years of postgraduate training, and a specialist in psychoneuroimmunology (PNEI), trained with Xevi Verdaguer. I have also trained in coaching and emotional intelligence with Joaquina Fernández (Institute of Humanities and Business).",
+    "bio2": "We connect the dots that others look at separately. From small to large. From your cells to your daily life. So you stop wondering whether what you're doing is helping you or not, and start understanding yourself to act in your own favor.",
+    "credentials": [
+      "Licensed Physiotherapist no. 9307",
+      "Osteopathy (6 years postgraduate)",
+      "PNEI — trained with Xevi Verdaguer",
+      "Coaching & Emotional Intelligence",
+      "Nutrition and Dietetics Degree (in progress)"
+    ],
+    "approachTitle": "My method",
+    "approachItems": [
+      {
+        "title": "Systemic",
+        "description": "Health is a global whole made of interconnected systems. Everything fits when you have the right information."
+      },
+      {
+        "title": "Integrative",
+        "description": "Physical, emotional, functional and lifestyle approach — from the cell outward."
+      },
+      {
+        "title": "Personalized",
+        "description": "Plans adapted to your reality, not generic templates. Your body, your rhythm."
+      },
+      {
+        "title": "Evidence-based",
+        "description": "Scientific practices with professional supervision, always within the legal framework."
+      }
+    ]
+  },
+  "packages": {
+    "heading": "Programs",
+    "subheading": "Choose the support that best fits where you are",
+    "cta": "Book a call",
+    "popular": "Most popular",
+    "items": [
+      {
+        "id": "implementacion",
+        "name": "Cellular Implementation Program",
+        "duration": "4 weeks",
+        "format": "1:1 general support",
+        "price": "690",
+        "currency": "€",
+        "features": [
+          "Practical supermarket shopping guide",
+          "List of recommended meat and vegetable suppliers",
+          "Label reading training",
+          "Meal organization",
+          "Introduction to applied chrononutrition",
+          "Basic stress management",
+          "Initial home environment detox",
+          "Recommended bibliography",
+          "Access to recorded digital content"
+        ],
+        "guarantee": "If you apply the agreed recommendations and don't perceive subjective improvement in energy or mental clarity, we extend the support by 2 weeks at no additional cost."
+      },
+      {
+        "id": "personalizado",
+        "name": "Personalized Cellular Support",
+        "duration": "8 weeks",
+        "format": "1:1 individualized support",
+        "price": "2,400",
+        "currency": "€",
+        "popular": true,
+        "note": "Available in 3 installments",
+        "features": [
+          "Everything from the Implementation Program",
+          "6 individual video call sessions",
+          "Practical plan adapted to your reality",
+          "Weekly follow-up",
+          "Review of real shopping and home environment",
+          "Psychological strategies to sustain change",
+          "Coordination with your health protocol",
+          "Personalized digital folder",
+          "Follow-up with indicators and charts",
+          "Automated checklist"
+        ],
+        "guarantee": "If you follow the agreed plan and no improvements are observed in pre-defined functional parameters, we provide an additional strategic session at no cost."
+      },
+      {
+        "id": "integral",
+        "name": "Comprehensive Cellular Follow-up",
+        "duration": "12 weeks",
+        "format": "1:1 intensive support",
+        "price": "6,500",
+        "originalPrice": "7,000",
+        "currency": "€",
+        "note": "Pay now · Save €500 — Or 3 installments (€7,000 total)",
+        "features": [
+          "Everything from the Personalized Support",
+          "Joint review of progress",
+          "Progressive adjustments in nutrition and environment",
+          "Biological rhythm optimization",
+          "Advanced stress management",
+          "Close implementation supervision",
+          "Limited spots per quarter"
+        ],
+        "guarantee": "Limited spots per quarter to guarantee maximum quality of support."
+      }
+    ]
+  },
+  "guarantees": {
+    "heading": "Professional framework",
+    "subheading": "I work within my professional scope as a licensed health practitioner. Here is what you can expect.",
+    "whatIDo": {
+      "title": "What I do",
+      "items": [
+        "Health education",
+        "Lifestyle and habit counseling",
+        "Chrononutrition guidance",
+        "Stress management",
+        "Therapeutic exercise",
+        "Behavioral support",
+        "Environmental hygiene education",
+        "Functional follow-up"
+      ]
+    },
+    "whatIDontDo": {
+      "title": "What I don't do",
+      "items": [
+        "Medical diagnosis",
+        "Drug prescription",
+        "Modify medical treatments",
+        "Interpret lab results independently from a physician",
+        "Indicate invasive procedures"
+      ]
+    },
+    "conclusion": "If the cell constantly receives irritability signals, it will express inflammation. If we modulate the signals it receives, it can recover its self-regulation. Mind Your Cells helps you create the biological environment that allows that pattern to change."
+  },
+  "testimonials": {
+    "heading": "What they say",
+    "subheading": "Experiences from people who have implemented the protocol",
+    "placeholders": [
+      {
+        "quote": "Your testimony could be here.",
+        "name": "Coming soon",
+        "detail": ""
+      },
+      {
+        "quote": "First testimonials are on their way.",
+        "name": "Coming soon",
+        "detail": ""
+      },
+      {
+        "quote": "Have you gone through the program? Share your experience.",
+        "name": "Coming soon",
+        "detail": ""
+      }
+    ]
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "subheading": "Everything you need to know before taking the first step",
+    "items": [
+      {
+        "question": "Does this replace my doctor or treatment?",
+        "answer": "No. Mind Your Cells is a complement to medical treatment or protocol, never a substitute. My work consists of helping you implement in your daily life what the doctor has recommended. I do not make diagnoses or modify treatments."
+      },
+      {
+        "question": "Do I need to be following a medical protocol to access the programs?",
+        "answer": "It is not essential. Although the program is especially designed for people who already have a medical indication and need help implementing it, I also work with people seeking to optimize their health preventively. If you have doubts, book a free call and we'll assess together."
+      },
+      {
+        "question": "What are the sessions like?",
+        "answer": "Sessions are individual, by video call, in a personalized and unhurried space. The frequency and number of sessions depends on the program chosen. Between sessions you will receive resources, follow-up and support adapted to your pace."
+      },
+      {
+        "question": "What is the difference between the three programs?",
+        "answer": "The intensity and depth of support. The Implementation Program (4 weeks) covers essential practical foundations. The Personalized Support (8 weeks) includes individual sessions and personalized weekly follow-up. The Comprehensive Follow-up (12 weeks) is the most intensive, with progressive adjustments and close supervision throughout the process."
+      },
+      {
+        "question": "Can I pay in installments?",
+        "answer": "The Personalized Cellular Support (8 weeks) and the Comprehensive Cellular Follow-up (12 weeks) are available in 3 installments. The Cellular Implementation Program (4 weeks) requires a single payment. Additionally, if you pay the Comprehensive Follow-up in one payment, you save €500 compared to the installment price. Consult conditions during the free assessment call."
+      },
+      {
+        "question": "When will I start noticing results?",
+        "answer": "It depends on your starting point and consistency of application. Many people perceive improvements in energy and mental clarity within the first weeks. Deep cellular changes are gradual and consolidate throughout the program."
+      },
+      {
+        "question": "What happens if I follow the program and don't notice improvements?",
+        "answer": "Each program includes a specific guarantee. If you follow the agreed plan and don't perceive improvements, we extend the support or provide additional sessions at no extra cost. My commitment is to you and to the process."
+      }
+    ]
+  },
+  "bookCall": {
+    "heading": "Take the first step",
+    "subheading": "A free 30-minute call to get to know each other, understand your situation, and see if we can work together. No pressure. No commitment.",
+    "cta": "Book a free call",
+    "note": "Free · No commitment · 30 minutes"
+  },
+  "footer": {
+    "brand": "Mind Your Cells",
+    "tagline": "Finessing your Cellular Health",
+    "practitioner": "Adriana Blanco Durán",
+    "credential": "Licensed Physiotherapist no. 9307",
+    "legal": "All support offered by Mind Your Cells is explicitly presented as a complement to medical treatment, never as a substitute. No diagnoses are made and no treatments are prescribed.",
+    "copyright": "© {year} Adriana Blanco Durán. All rights reserved."
+  }
+}
