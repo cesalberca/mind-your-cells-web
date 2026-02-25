@@ -40,7 +40,7 @@ export function Header() {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-14">
         <a href={`/${locale}`} className="leading-tight">
-          <span className="block text-ceramic font-semibold text-sm" style={{ fontFamily: 'var(--font-display, serif)' }}>
+          <span className="block text-ceramic font-display font-semibold text-sm">
             {t('brand')}
           </span>
           <span className="block text-[0.6rem] text-ceramic/35 font-sans tracking-widest uppercase">

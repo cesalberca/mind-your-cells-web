@@ -22,7 +22,7 @@ export function IndividualConsultation() {
             <p className="text-stone/65 text-base leading-relaxed font-sans font-light">
               {t('approach')}
             </p>
-            <p className="text-terracotta text-base leading-relaxed italic" style={{ fontFamily: 'var(--font-display, serif)' }}>
+            <p className="text-terracotta text-base leading-relaxed font-sans font-light">
               {t('combined')}
             </p>
             <p className="text-stone/65 text-base leading-relaxed font-sans font-light">
@@ -35,7 +35,7 @@ export function IndividualConsultation() {
 
           {/* Session card */}
           <div className="border border-stone/15 p-8 bg-cream flex flex-col gap-6">
-            <h3 className="text-stone font-semibold text-xl" style={{ fontFamily: 'var(--font-display, serif)' }}>
+            <h3 className="text-stone font-semibold text-xl">
               {t('session.title')}
             </h3>
 
@@ -50,7 +50,7 @@ export function IndividualConsultation() {
 
             <div className="border-t border-stone/10 pt-5">
               <div className="flex items-end gap-1.5">
-                <span className="text-4xl font-light text-stone" style={{ fontFamily: 'var(--font-display, serif)' }}>
+                <span className="text-4xl font-light text-stone">
                   {t('session.price')}
                 </span>
                 <span className="text-stone/60 text-base font-sans mb-1">

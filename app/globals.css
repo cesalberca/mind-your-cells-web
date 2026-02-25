@@ -19,8 +19,9 @@
   --color-cream: #f5f0eb;
 
   /* Fonts */
-  --font-display: var(--font-cormorant);
-  --font-sans: 'Satoshi', system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-mellow);
+  --font-sans: var(--font-satoshi), system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-playfair);
 
   /* shadcn tokens */
   --color-sidebar-ring: var(--sidebar-ring);
@@ -113,6 +114,11 @@
   h5,
   h6 {
     font-family: var(--font-display, 'Georgia', serif);
+  }
+  em,
+  i {
+    font-family: var(--font-serif, 'Georgia', serif);
+    font-style: italic;
   }
 }
 

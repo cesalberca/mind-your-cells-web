@@ -43,7 +43,7 @@ export function Guarantees() {
         </div>
 
         <div className="border-l-2 border-soft-terracotta pl-8 max-w-2xl mx-auto">
-          <p className="text-stone/70 text-lg leading-relaxed italic font-light" style={{ fontFamily: 'var(--font-display, serif)' }}>{t('conclusion')}</p>
+          <p className="text-stone/70 text-lg leading-relaxed font-sans font-light">{t('conclusion')}</p>
         </div>
       </div>
     </section>

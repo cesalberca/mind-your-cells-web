@@ -61,7 +61,7 @@ export function Packages() {
                       {pkg.originalPrice}{pkg.currency}
                     </span>
                   )}
-                  <span className="text-4xl font-light text-stone" style={{ fontFamily: 'var(--font-display, serif)' }}>
+                  <span className="text-4xl font-light text-stone">
                     {pkg.price}
                   </span>
                   <span className="text-stone/60 text-lg font-sans mb-1">{pkg.currency}</span>
@@ -81,7 +81,7 @@ export function Packages() {
               </ul>
 
               <div className="border-t border-crude-ceramic/20 pt-5">
-                <p className="text-stone/30 text-xs leading-relaxed italic font-sans">{pkg.guarantee}</p>
+                <p className="text-stone/30 text-xs leading-relaxed font-sans">{pkg.guarantee}</p>
               </div>
 
               <BookCallLink size="md" variant="light" goal="bookCallPackage" className="justify-center w-full text-center">

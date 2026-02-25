@@ -17,7 +17,7 @@ export function AboutAdriana() {
           {t('heading')}
         </h2>
 
-        <p className="text-center text-soft-terracotta text-lg italic font-light mb-16 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'var(--font-display, serif)' }}>
+        <p className="text-center text-soft-terracotta text-lg font-sans font-light mb-16 max-w-2xl mx-auto leading-relaxed">
           {t('manifesto')}
         </p>
 

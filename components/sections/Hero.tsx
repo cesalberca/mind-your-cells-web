@@ -15,7 +15,7 @@ export function Hero() {
 
         <h1 className="text-5xl sm:text-7xl md:text-8xl font-light leading-[1.05] tracking-tight text-ceramic">
           <span className="block">{t('headline')}</span>
-          <span className="block italic text-soft-terracotta">{t('headlineAccent')}</span>
+          <span className="block text-soft-terracotta">{t('headlineAccent')}</span>
         </h1>
 
         <p className="text-base sm:text-lg text-ceramic/55 leading-relaxed max-w-xl font-sans font-light">

@@ -32,10 +32,7 @@ export default async function LoginPage({ searchParams }: Props) {
     <main className="min-h-screen bg-stone flex items-center justify-center px-6">
       <div className="w-full max-w-xs">
         <div className="text-center mb-10">
-          <h1
-            className="text-ceramic font-semibold text-xl mb-1.5"
-            style={{ fontFamily: 'var(--font-cormorant, serif)' }}
-          >
+          <h1 className="text-ceramic font-display font-semibold text-xl mb-1.5">
             Mind Your Cells
           </h1>
           <p className="text-ceramic/30 text-[0.6rem] tracking-widest uppercase font-sans">

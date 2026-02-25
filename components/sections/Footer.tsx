@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="py-16 px-6 border-t border-ceramic/8 bg-stone flex justify-center">
       <div className="max-w-4xl mx-auto w-full space-y-8 flex flex-col items-center">
         <div className="text-center">
-          <p className="text-ceramic font-semibold text-lg" style={{ fontFamily: 'var(--font-display, serif)' }}>{t('brand')}</p>
+          <p className="text-ceramic font-display font-semibold text-lg">{t('brand')}</p>
           <p className="text-ceramic/30 text-xs font-sans tracking-widest uppercase mt-1">{t('tagline')}</p>
         </div>
 

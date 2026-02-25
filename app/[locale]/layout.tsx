@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Playfair_Display } from 'next/font/google'
+import localFont from 'next/font/local'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
@@ -7,11 +7,30 @@ import { routing } from '@/i18n/routing'
 import { FathomAnalytics } from '@/components/Fathom'
 import '../globals.css'
 
-const playfair = Playfair_Display({
-  variable: '--font-cormorant',
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  style: ['normal', 'italic'],
+const mellow = localFont({
+  src: [
+    { path: '../fonts/mellow/MADEMellowPERSONALUSE-Light.otf', weight: '300', style: 'normal' },
+    { path: '../fonts/mellow/MADEMellowPERSONALUSE-Regular.otf', weight: '400', style: 'normal' },
+    { path: '../fonts/mellow/MADEMellowPERSONALUSE-Medium.otf', weight: '500', style: 'normal' },
+    { path: '../fonts/mellow/MADEMellowPERSONALUSE-SemiBold.otf', weight: '600', style: 'normal' },
+    { path: '../fonts/mellow/MADEMellowPERSONALUSE-Bold.otf', weight: '700', style: 'normal' },
+  ],
+  variable: '--font-mellow',
+})
+
+const satoshi = localFont({
+  src: [
+    { path: '../fonts/satoshi/Satoshi-Variable.woff2', weight: '300 900', style: 'normal' },
+    { path: '../fonts/satoshi/Satoshi-VariableItalic.woff2', weight: '300 900', style: 'italic' },
+  ],
+  variable: '--font-satoshi',
+})
+
+const playfair = localFont({
+  src: [
+    { path: '../fonts/playfair/PlayfairDisplay-Italic-VariableFont_wght.ttf', weight: '400 900', style: 'italic' },
+  ],
+  variable: '--font-playfair',
 })
 
 type Props = {
@@ -112,12 +131,6 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={locale}>
       <head>
         <link rel="canonical" href={`https://www.mindyourcells.es/${locale}`} />
-        <link rel="preconnect" href="https://api.fontshare.com" />
-        {/* biome-ignore lint/performance/noImgElement: external font stylesheet */}
-        <link
-          rel="stylesheet"
-          href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap"
-        />
         <script
           type="application/ld+json"
           // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD structured data
@@ -147,7 +160,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           }}
         />
       </head>
-      <body className={`${playfair.variable} antialiased`}>
+      <body className={`${mellow.variable} ${satoshi.variable} ${playfair.variable} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <FathomAnalytics />
           {children}
