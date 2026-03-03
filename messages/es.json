@@ -13,8 +13,8 @@
   "hero": {
     "headline": "Cuando te entiendes,",
     "headlineAccent": "todo encaja.",
-    "subheadline": "Salud es lo que el cuerpo te devuelve cuando le das lo que verdaderamente necesita. Conectamos los puntos que otros miran por separado. Desde tus células a tu día a día.",
-    "cta": "Reservar llamada gratuita",
+    "subheadline": "Acompañamiento <em>integrativo</em> para mejorar tu salud celular, tu energía y tu funcionalidad diaria.",
+    "cta": "Empieza hoy",
     "credentialLabel": "Adriana Blanco Durán",
     "credentials": "Fisioterapeuta colegiada · PNIE · Osteopatía · Coaching",
     "scrollHint": "Descubre cómo"
@@ -121,10 +121,11 @@
         "name": "Acompañamiento Celular Personalizado",
         "duration": "8 semanas",
         "format": "Acompañamiento 1:1 individualizado",
-        "price": "2.400",
+        "price": "2.280",
+        "originalPrice": "2.400",
         "currency": "€",
         "popular": true,
-        "note": "Disponible en 3 plazos",
+        "note": "Pago único · Ahorra el 5% — O en 3 plazos (2.400 € total)",
         "features": [
           "Todo lo del Programa de Implementación",
           "6 sesiones individuales por videollamada",
@@ -144,10 +145,10 @@
         "name": "Seguimiento Integral Celular",
         "duration": "12 semanas",
         "format": "Acompañamiento 1:1 intensivo",
-        "price": "6.500",
+        "price": "6.650",
         "originalPrice": "7.000",
         "currency": "€",
-        "note": "Pago único · Ahorra 500 € — O en 3 plazos (7.000 € total)",
+        "note": "Pago único · Ahorra el 5% (350 €) — O en 3 plazos (7.000 € total)",
         "features": [
           "Todo lo del Acompañamiento Personalizado",
           "Revisión conjunta de evolución",
@@ -267,6 +268,7 @@
   "bookCall": {
     "heading": "Da el primer paso",
     "subheading": "Una llamada gratuita de 30 minutos para conocernos, entender tu situación y ver si podemos trabajar juntos. Sin presión. Sin compromiso.",
+    "quote": "Salud es lo que el cuerpo te devuelve cuando le das lo que realmente necesita.",
     "cta": "Reservar llamada gratuita",
     "note": "Gratuita · Sin compromiso · 30 minutos"
   },
@@ -276,6 +278,52 @@
     "practitioner": "Adriana Blanco Durán",
     "credential": "Fisioterapeuta colegiada nº 9307",
     "legal": "Todo el acompañamiento ofrecido por Mind Your Cells se presenta explícitamente como complemento al tratamiento médico, nunca como sustituto. No se realizan diagnósticos ni se prescriben tratamientos.",
-    "copyright": "© {year} Adriana Blanco Durán. Todos los derechos reservados."
+    "copyright": "© {year} Adriana Blanco Durán. Todos los derechos reservados.",
+    "nav": {
+      "title": "Navegación",
+      "individual": "Consulta Individual",
+      "programs": "Programas",
+      "faq": "FAQ"
+    },
+    "contact": {
+      "title": "Contacto"
+    }
+  },
+  "benefits": {
+    "heading": "Mejora tu salud celular optimizando tus hábitos y tu entorno.",
+    "items": [
+      {
+        "id": "claridad",
+        "title": "Claridad",
+        "description": "Entiendes por qué tu cuerpo responde como lo hace y qué señales necesita para funcionar de forma óptima."
+      },
+      {
+        "id": "energia",
+        "title": "Energía",
+        "description": "Recuperas vitalidad real optimizando los hábitos que más impactan en tu función celular diaria."
+      },
+      {
+        "id": "regulacion",
+        "title": "Regulación",
+        "description": "Tu sistema nervioso, hormonal e inmune recuperan el equilibrio que necesitan para autorregularse."
+      }
+    ]
+  },
+  "brandManifesto": {
+    "tagline": "Finessing your Cellular Health",
+    "body": "Cuando la célula recibe las señales adecuadas, el cuerpo recupera su capacidad de autorregulación. Nuestro trabajo es ayudarte a crear ese entorno, desde lo más cotidiano hasta lo más profundo.",
+    "credentials": "Adriana Blanco Durán — Fisioterapeuta · PNIE · Osteopatía"
+  },
+  "paraQuienEs": {
+    "heading": "Mind Your Cells es para ti si:",
+    "items": [
+      "Tienes fatiga crónica, falta de energía o te despiertas sin sentirte descansado",
+      "Sigues un protocolo médico y no sabes cómo implementarlo en tu día a día",
+      "Quieres optimizar tu salud desde la raíz, no solo tapar síntomas",
+      "Buscas acompañamiento que conecte cuerpo, mente y hábitos de forma personalizada",
+      "Tu entorno (alimentación, luz, cosmética, estrés) está afectando tu bienestar",
+      "Quieres entender por qué te sientes como te sientes y actuar desde ese conocimiento"
+    ],
+    "cta": "Reservar llamada gratuita"
   }
 }

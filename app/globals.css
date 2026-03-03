@@ -103,6 +103,8 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans, sans-serif), sans-serif;
+    font-weight: 500;
   }
   html {
     scroll-behavior: smooth;
@@ -113,12 +115,13 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-display, 'Georgia', serif);
+    font-family: var(--font-display, 'Georgia', serif), serif;
   }
   em,
   i {
-    font-family: var(--font-serif, 'Georgia', serif);
+    font-family: var(--font-serif, 'Georgia', serif), serif;
     font-style: italic;
+    font-weight: 300;
   }
 }
 

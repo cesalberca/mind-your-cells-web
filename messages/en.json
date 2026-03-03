@@ -13,8 +13,8 @@
   "hero": {
     "headline": "When you understand yourself,",
     "headlineAccent": "everything falls into place.",
-    "subheadline": "Health is what your body gives back when you give it what it truly needs. We connect the dots others look at separately. From your cells to your daily life.",
-    "cta": "Book a free call",
+    "subheadline": "<em>Integrative</em> support to improve your cellular health, your energy and your daily functionality.",
+    "cta": "Start today",
     "credentialLabel": "Adriana Blanco Durán",
     "credentials": "Licensed Physiotherapist · PNEI · Osteopathy · Coaching",
     "scrollHint": "Discover how"
@@ -121,10 +121,11 @@
         "name": "Personalized Cellular Support",
         "duration": "8 weeks",
         "format": "1:1 individualized support",
-        "price": "2,400",
+        "price": "2,280",
+        "originalPrice": "2,400",
         "currency": "€",
         "popular": true,
-        "note": "Available in 3 installments",
+        "note": "Single payment · Save 5% — Or 3 installments (€2,400 total)",
         "features": [
           "Everything from the Implementation Program",
           "6 individual video call sessions",
@@ -144,10 +145,10 @@
         "name": "Comprehensive Cellular Follow-up",
         "duration": "12 weeks",
         "format": "1:1 intensive support",
-        "price": "6,500",
+        "price": "6,650",
         "originalPrice": "7,000",
         "currency": "€",
-        "note": "Pay now · Save €500 — Or 3 installments (€7,000 total)",
+        "note": "Single payment · Save 5% — Or 3 installments (€7,000 total)",
         "features": [
           "Everything from the Personalized Support",
           "Joint review of progress",
@@ -267,6 +268,7 @@
   "bookCall": {
     "heading": "Take the first step",
     "subheading": "A free 30-minute call to get to know each other, understand your situation, and see if we can work together. No pressure. No commitment.",
+    "quote": "Health is what your body gives back when you give it what it truly needs.",
     "cta": "Book a free call",
     "note": "Free · No commitment · 30 minutes"
   },
@@ -276,6 +278,52 @@
     "practitioner": "Adriana Blanco Durán",
     "credential": "Licensed Physiotherapist no. 9307",
     "legal": "All support offered by Mind Your Cells is explicitly presented as a complement to medical treatment, never as a substitute. No diagnoses are made and no treatments are prescribed.",
-    "copyright": "© {year} Adriana Blanco Durán. All rights reserved."
+    "copyright": "© {year} Adriana Blanco Durán. All rights reserved.",
+    "nav": {
+      "title": "Navigation",
+      "individual": "Individual Consultation",
+      "programs": "Programs",
+      "faq": "FAQ"
+    },
+    "contact": {
+      "title": "Contact"
+    }
+  },
+  "benefits": {
+    "heading": "Improve your cellular health by optimizing your habits and environment.",
+    "items": [
+      {
+        "id": "clarity",
+        "title": "Clarity",
+        "description": "You understand why your body responds the way it does and what signals it needs to function at its best."
+      },
+      {
+        "id": "energy",
+        "title": "Energy",
+        "description": "You regain real vitality by optimizing the habits that most impact your daily cellular function."
+      },
+      {
+        "id": "regulation",
+        "title": "Regulation",
+        "description": "Your nervous, hormonal and immune systems recover the balance they need to self-regulate."
+      }
+    ]
+  },
+  "brandManifesto": {
+    "tagline": "Finessing your Cellular Health",
+    "body": "When the cell receives the right signals, the body recovers its capacity for self-regulation. Our work is to help you create that environment, from the most everyday to the most profound.",
+    "credentials": "Adriana Blanco Durán — Physiotherapist · PNEI · Osteopathy"
+  },
+  "paraQuienEs": {
+    "heading": "Mind Your Cells is for you if:",
+    "items": [
+      "You experience chronic fatigue, lack of energy, or wake up without feeling rested",
+      "You follow a medical protocol but don't know how to implement it in your daily life",
+      "You want to optimize your health from the root, not just manage symptoms",
+      "You're looking for personalized support that connects body, mind and habits",
+      "Your environment (nutrition, light, cosmetics, stress) is affecting your wellbeing",
+      "You want to understand why you feel the way you do and act from that knowledge"
+    ],
+    "cta": "Book a free call"
   }
 }

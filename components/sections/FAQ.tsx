@@ -20,7 +20,7 @@ export function FAQ() {
         </h2>
         <p className="text-center text-stone/50 mb-16 text-base font-sans">{t('subheading')}</p>
 
-        <Accordion type="single" collapsible className="divide-y divide-crude-ceramic/30">
+        <Accordion type="multiple" className="divide-y divide-crude-ceramic/30">
           {items.map((item) => (
             <AccordionItem
               key={item.question}

@@ -36,16 +36,11 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         hidden ? '-translate-y-full' : 'translate-y-0'
-      } ${scrolled ? 'bg-stone/95 backdrop-blur-md border-b border-ceramic/10' : 'bg-transparent'}`}
+      } ${scrolled ? 'bg-cream/95 backdrop-blur-md border-b border-stone/8' : 'bg-transparent'}`}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-14">
-        <a href={`/${locale}`} className="leading-tight">
-          <span className="block text-ceramic font-display font-semibold text-sm">
-            {t('brand')}
-          </span>
-          <span className="block text-[0.6rem] text-ceramic/35 font-sans tracking-widest uppercase">
-            {t('tagline')}
-          </span>
+        <a href={`/${locale}`} className="flex items-center">
+          <img src="/logo.svg" alt="Mind Your Cells" className="h-[14px]" />
         </a>
 
         <nav className="hidden sm:flex items-center gap-1">
@@ -53,7 +48,7 @@ export function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="text-ceramic/55 hover:text-ceramic text-xs tracking-wider uppercase px-3 py-1.5 transition-colors font-sans"
+              className="text-stone/45 hover:text-stone text-xs tracking-wider uppercase px-3 py-1.5 transition-colors font-sans"
             >
               {item.label}
             </a>
@@ -63,17 +58,17 @@ export function Header() {
         <div className="flex items-center gap-3">
           {/* Language selector */}
           <div className="flex items-center gap-1.5 text-[0.6rem] tracking-widest uppercase font-sans">
-            <span className="text-ceramic font-medium">{locale.toUpperCase()}</span>
-            <span className="text-ceramic/20">/</span>
+            <span className="text-stone font-medium">{locale.toUpperCase()}</span>
+            <span className="text-stone/20">/</span>
             <a
               href={`/${otherLocale}`}
-              className="text-ceramic/35 hover:text-ceramic/70 transition-colors"
+              className="text-stone/35 hover:text-stone/70 transition-colors"
             >
               {otherLocale.toUpperCase()}
             </a>
           </div>
 
-          <BookCallLink size="sm" variant="dark" goal="bookCallHeader">{t('cta')}</BookCallLink>
+          <BookCallLink size="sm" variant="light" goal="bookCallHeader">{t('cta')}</BookCallLink>
         </div>
       </div>
     </header>

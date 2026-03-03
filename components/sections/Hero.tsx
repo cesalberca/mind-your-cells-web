@@ -1,42 +1,56 @@
+'use client'
+
 import { useTranslations } from 'next-intl'
-import { BookCallLink } from '@/components/BookCallLink'
-import { SocialLinks } from '@/components/SocialLinks'
+import Image from 'next/image'
+import { Link } from '@/components/Link'
+import { trackGoal } from '@/lib/fathom-goals'
+
+const BOOK_CALL_URL = 'https://calendar.app.google/yytTRx1Xr5C17CtY8'
 
 export function Hero() {
   const t = useTranslations('hero')
-  const tHeader = useTranslations('header')
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 pt-20 pb-20 bg-stone">
-      <div className="relative z-10 flex flex-col items-center gap-10 max-w-4xl mx-auto w-full text-center">
-        <span className="text-[0.6rem] font-sans tracking-widest uppercase text-ceramic/40 border border-ceramic/15 px-5 py-2">
-          {tHeader('tagline')}
-        </span>
+    <section className="min-h-screen bg-cream flex flex-col justify-center px-6 pt-20 pb-16">
+      <div className="max-w-6xl mx-auto w-full">
+        <div className="grid md:grid-cols-[2fr_3fr] gap-12 lg:gap-16 items-center">
+          {/* Left: Text content */}
+          <div>
+            <h1 className="text-4xl xl:text-5xl leading-[1.05] tracking-tight text-stone">
+              <span className="block">{t('headline')}</span>
+              <span className="block">{t('headlineAccent')}</span>
+            </h1>
 
-        <h1 className="text-5xl sm:text-7xl md:text-8xl font-light leading-[1.05] tracking-tight text-ceramic">
-          <span className="block">{t('headline')}</span>
-          <span className="block text-soft-terracotta">{t('headlineAccent')}</span>
-        </h1>
+            <p className="mt-8 text-base sm:text-lg text-stone/55 leading-relaxed max-w-md">
+              {t.rich('subheadline', {
+                em: (chunks) => <em key="em">{chunks}</em>,
+              })}
+            </p>
 
-        <p className="text-base sm:text-lg text-ceramic/55 leading-relaxed max-w-xl font-sans font-light">
-          {t('subheadline')}
-        </p>
+            <div className="mt-16">
+              <Link
+                href={BOOK_CALL_URL}
+                className="text-soft-terracotta text-sm tracking-widest uppercase"
+                onClick={() => trackGoal('bookCallHero')}
+              >
+                {t('cta')}
+              </Link>
+            </div>
+          </div>
 
-        <div className="flex flex-col sm:flex-row items-center gap-4 mt-2">
-          <BookCallLink size="xl" variant="dark" goal="bookCallHero">
-            {t('cta')}
-          </BookCallLink>
+          {/* Right: Hero image */}
+          <div className="flex justify-center md:justify-end">
+            <Image
+              src="/images/hero-scutoid.png"
+              alt="Scutoid — estructura celular"
+              width={970}
+              height={662}
+              className="w-full"
+              priority
+            />
+          </div>
         </div>
-
-        <div className="flex flex-col items-center gap-1 mt-2">
-          <p className="text-ceramic/60 font-sans text-sm font-medium">{t('credentialLabel')}</p>
-          <p className="text-ceramic/30 text-xs font-sans tracking-wide">{t('credentials')}</p>
-        </div>
-
-        <SocialLinks className="mt-2" variant="dark" />
       </div>
-
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-stone to-transparent pointer-events-none" />
     </section>
   )
 }

@@ -1,10 +1,10 @@
 import { Header } from '@/components/sections/Header'
 import { Hero } from '@/components/sections/Hero'
-import { TheProblem } from '@/components/sections/TheProblem'
-import { AboutAdriana } from '@/components/sections/AboutAdriana'
-import { Packages } from '@/components/sections/Packages'
+import { Benefits } from '@/components/sections/Benefits'
+import { BrandManifesto } from '@/components/sections/BrandManifesto'
 import { IndividualConsultation } from '@/components/sections/IndividualConsultation'
-import { Guarantees } from '@/components/sections/Guarantees'
+import { ParaQuienEs } from '@/components/sections/ParaQuienEs'
+import { Packages } from '@/components/sections/Packages'
 import { Testimonials } from '@/components/sections/Testimonials'
 import { FAQ } from '@/components/sections/FAQ'
 import { BookCallSection } from '@/components/sections/BookCallSection'
@@ -17,15 +17,15 @@ export default function Home() {
 
       <Hero />
 
-      <TheProblem />
+      <Benefits />
 
-      <AboutAdriana />
+      <BrandManifesto />
 
       <IndividualConsultation />
 
-      <Packages />
+      <ParaQuienEs />
 
-      <Guarantees />
+      <Packages />
 
       <Testimonials />
 
