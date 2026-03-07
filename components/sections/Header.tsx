@@ -14,10 +14,8 @@ export function Header() {
   const otherLocale = locale === 'es' ? 'en' : 'es'
 
   const NAV_ITEMS = [
-    { label: t('nav.about'), href: '#sobre-mi' },
-    { label: t('nav.programs'), href: '#programas' },
-    { label: t('nav.testimonials'), href: '#testimonios' },
-    { label: t('nav.faq'), href: '#faq' },
+    { label: t('nav.about'), href: '#about' },
+    { label: t('nav.programs'), href: '/plans' },
   ]
 
   useEffect(() => {
@@ -48,7 +46,7 @@ export function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="text-stone/45 hover:text-stone text-xs tracking-wider uppercase px-3 py-1.5 transition-colors font-sans"
+              className="text-soft-terracotta hover:text-stone text-xs tracking-wider uppercase px-3 py-1.5 transition-colors font-sans"
             >
               {item.label}
             </a>
@@ -60,15 +58,14 @@ export function Header() {
           <div className="flex items-center gap-1.5 text-[0.6rem] tracking-widest uppercase font-sans">
             <span className="text-stone font-medium">{locale.toUpperCase()}</span>
             <span className="text-stone/20">/</span>
-            <a
-              href={`/${otherLocale}`}
-              className="text-stone/35 hover:text-stone/70 transition-colors"
-            >
+            <a href={`/${otherLocale}`} className="text-stone/35 hover:text-stone/70 transition-colors">
               {otherLocale.toUpperCase()}
             </a>
           </div>
 
-          <BookCallLink size="sm" variant="light" goal="bookCallHeader">{t('cta')}</BookCallLink>
+          <BookCallLink size="sm" variant="light" goal="bookCallHeader">
+            {t('cta')}
+          </BookCallLink>
         </div>
       </div>
     </header>

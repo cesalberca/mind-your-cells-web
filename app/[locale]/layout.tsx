@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 import { FathomAnalytics } from '@/components/Fathom'
 import '../globals.css'
+import type { ReactNode } from 'react'
 
 const mellow = localFont({
   src: [
@@ -15,7 +16,7 @@ const mellow = localFont({
     { path: '../fonts/mellow/MADEMellowPERSONALUSE-SemiBold.otf', weight: '600', style: 'normal' },
     { path: '../fonts/mellow/MADEMellowPERSONALUSE-Bold.otf', weight: '700', style: 'normal' },
   ],
-  variable: '--font-mellow',
+  variable: '--font-heading',
 })
 
 const satoshi = localFont({
@@ -23,18 +24,16 @@ const satoshi = localFont({
     { path: '../fonts/satoshi/Satoshi-Variable.woff2', weight: '300 900', style: 'normal' },
     { path: '../fonts/satoshi/Satoshi-VariableItalic.woff2', weight: '300 900', style: 'italic' },
   ],
-  variable: '--font-satoshi',
+  variable: '--font-body',
 })
 
 const playfair = localFont({
-  src: [
-    { path: '../fonts/playfair/PlayfairDisplay-Italic-VariableFont_wght.ttf', weight: '400 900', style: 'italic' },
-  ],
-  variable: '--font-playfair',
+  src: [{ path: '../fonts/playfair/PlayfairDisplay-Italic-VariableFont_wght.ttf', weight: '400 900', style: 'italic' }],
+  variable: '--font-display',
 })
 
 type Props = {
-  children: React.ReactNode
+  children: ReactNode
   params: Promise<{ locale: string }>
 }
 
@@ -82,9 +81,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     authors: [{ name: 'Adriana Blanco Durán' }],
     creator: 'Adriana Blanco Durán',
     openGraph: {
-      title: isEs
-        ? 'Mind Your Cells | Optimización Celular'
-        : 'Mind Your Cells | Cellular Optimization',
+      title: isEs ? 'Mind Your Cells | Optimización Celular' : 'Mind Your Cells | Cellular Optimization',
       description: isEs
         ? 'Acompañamiento integrativo personalizado. Fisioterapeuta, PNIE, Osteopatía. Adriana Blanco Durán.'
         : 'Personalized integrative support. Physiotherapist, PNEI, Osteopathy. Adriana Blanco Durán.',
@@ -153,8 +150,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                   '@type': 'Person',
                   name: 'Adriana Blanco Durán',
                 },
-                description:
-                  'Acompañamiento integrativo personalizado para optimización celular y salud integrativa.',
+                description: 'Acompañamiento integrativo personalizado para optimización celular y salud integrativa.',
               },
             }),
           }}

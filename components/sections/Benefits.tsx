@@ -1,9 +1,10 @@
 import { useTranslations } from 'next-intl'
+import { BookCallLink } from '@/components/BookCallLink'
 
 type BenefitItem = {
   id: string
   title: string
-  description: string
+  items: string[]
 }
 
 export function Benefits() {
@@ -11,23 +12,33 @@ export function Benefits() {
   const items = t.raw('items') as BenefitItem[]
 
   return (
-    <section className="py-24 px-6 bg-ceramic">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-stone mb-20 text-center max-w-2xl mx-auto leading-snug">
-          {t('heading')}
-        </h2>
+    <section className="py-32 px-6">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl sm:text-5xl font-light text-stone leading-snug max-w-xl mb-32">{t('heading')}</h2>
 
-        <div className="grid md:grid-cols-3 gap-px bg-crude-ceramic/30">
+        <div className="grid md:grid-cols-4 gap-12">
+          <div className="hidden md:block" />
+
           {items.map((item) => (
-            <div key={item.id} className="p-10 bg-ceramic text-center">
-              <h3 className="text-stone/40 font-sans font-semibold text-[0.65rem] tracking-widest uppercase mb-6">
+            <div key={item.id}>
+              <h3 className="text-stone font-sans font-semibold text-[0.65rem] tracking-[0.2em] uppercase mb-8">
                 {item.title}
               </h3>
-              <p className="text-stone/70 text-base font-sans font-light leading-relaxed">
-                {item.description}
-              </p>
+              <ul className="space-y-5">
+                {item.items.map((line, i) => (
+                  <li key={i} className="text-stone/60 text-sm font-sans font-light leading-snug">
+                    {line}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
+        </div>
+
+        <div className="mt-32 text-center">
+          <BookCallLink variant="text" size="sm" goal="benefits">
+            {t('cta')}
+          </BookCallLink>
         </div>
       </div>
     </section>

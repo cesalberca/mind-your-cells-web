@@ -21,11 +21,9 @@ export function Packages() {
   const items = t.raw('items') as PackageItem[]
 
   return (
-    <section id="programas" className="py-24 px-6 bg-cream">
+    <section id="programs" className="py-24 px-6 bg-cream">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-stone mb-4 text-center">
-          {t('heading')}
-        </h2>
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-stone mb-4 text-center">{t('heading')}</h2>
         <p className="text-center text-stone/50 mb-16 text-base font-sans">{t('subheading')}</p>
 
         <div className="grid md:grid-cols-3 gap-px bg-crude-ceramic/30">
@@ -33,18 +31,16 @@ export function Packages() {
             <div
               key={pkg.id}
               className={`flex flex-col gap-6 p-8 transition-colors ${
-                pkg.popular
-                  ? 'bg-white'
-                  : 'bg-cream hover:bg-white'
+                pkg.popular ? 'bg-white' : 'bg-cream hover:bg-white'
               }`}
             >
               <div>
                 {pkg.popular && (
-                  <span className="inline-block bg-terracotta text-cream text-[0.6rem] font-sans font-medium tracking-widest uppercase px-3 py-1 mb-3">
+                  <span className="inline-block bg-terracotta text-cream text-[0.6rem] font-sans tracking-widest uppercase px-3 py-1 mb-3">
                     {t('popular')}
                   </span>
                 )}
-                <h3 className="text-stone font-semibold text-xl leading-snug mb-3">{pkg.name}</h3>
+                <h3 className="text-stone text-xl leading-snug mb-3">{pkg.name}</h3>
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="text-soft-terracotta text-xs font-sans tracking-widest uppercase">
                     {pkg.duration}
@@ -58,23 +54,20 @@ export function Packages() {
                 <div className="flex items-end gap-2">
                   {pkg.originalPrice && (
                     <span className="text-stone/25 text-sm line-through mb-1 font-sans">
-                      {pkg.originalPrice}{pkg.currency}
+                      {pkg.originalPrice}
+                      {pkg.currency}
                     </span>
                   )}
-                  <span className="text-4xl font-light text-stone">
-                    {pkg.price}
-                  </span>
+                  <span className="text-4xl font-light text-stone">{pkg.price}</span>
                   <span className="text-stone/60 text-lg font-sans mb-1">{pkg.currency}</span>
                 </div>
-                {pkg.note && (
-                  <p className="text-stone/35 text-xs font-sans mt-1">{pkg.note}</p>
-                )}
+                {pkg.note && <p className="text-stone/35 text-xs font-sans mt-1">{pkg.note}</p>}
               </div>
 
               <ul className="space-y-3 flex-1">
                 {pkg.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
-                    <CheckIcon className="w-3.5 h-3.5 text-soft-terracotta flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <CheckIcon className="w-3.5 h-3.5 text-soft-terracotta shrink-0 mt-0.5" aria-hidden="true" />
                     <span className="text-stone/65 text-sm leading-snug font-sans">{feature}</span>
                   </li>
                 ))}
@@ -84,7 +77,12 @@ export function Packages() {
                 <p className="text-stone/30 text-xs leading-relaxed font-sans">{pkg.guarantee}</p>
               </div>
 
-              <BookCallLink size="md" variant="light" goal="bookCallPackage" className="justify-center w-full text-center">
+              <BookCallLink
+                size="md"
+                variant="light"
+                goal="bookCallPackage"
+                className="justify-center w-full text-center"
+              >
                 {t('cta')}
               </BookCallLink>
             </div>

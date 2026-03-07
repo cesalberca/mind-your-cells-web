@@ -9,6 +9,8 @@ export const FATHOM_GOALS = {
   bookCallPackage: 'bookCallPackage',
   bookCallIndividual: 'bookCallIndividual',
   bookCallTeam: 'bookCallTeam',
+  bookCallPremium: 'bookCallPremium',
+  benefits: 'benefits',
 } as const
 
 export type FathomGoal = keyof typeof FATHOM_GOALS

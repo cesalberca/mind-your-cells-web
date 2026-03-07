@@ -171,10 +171,7 @@
     "purpose": "To get started, assess your case, or for one-off sessions.",
     "session": {
       "title": "Individual online session",
-      "features": [
-        "Detailed analysis of your situation",
-        "Personalized guidance"
-      ],
+      "features": ["Detailed analysis of your situation", "Personalized guidance"],
       "price": "110",
       "currency": "€",
       "priceLabel": "/ session",
@@ -211,23 +208,22 @@
     "conclusion": "If the cell constantly receives irritability signals, it will express inflammation. If we modulate the signals it receives, it can recover its self-regulation. Mind Your Cells helps you create the biological environment that allows that pattern to change."
   },
   "testimonials": {
-    "heading": "What they say",
-    "subheading": "Experiences from people who have implemented the protocol",
-    "placeholders": [
+    "heading": "People like you who already have it all figured out",
+    "items": [
       {
-        "quote": "Your testimony could be here.",
-        "name": "Coming soon",
-        "detail": ""
+        "quote": "Adriana is an exceptional professional, and her human warmth is deeply connected to her way of working. You leave the session with a real sense of greater wellbeing and understanding, not just of the body but also of the inner world.",
+        "name": "Juan",
+        "initials": "J"
       },
       {
-        "quote": "First testimonials are on their way.",
-        "name": "Coming soon",
-        "detail": ""
+        "quote": "My experience with Adriana is a 10! Very professional and decisive. Giving a good diagnosis, making you feel safe in her hands. The improvement is remarkable. Always willing to help with her flexibility. Admirable! So happy to have found you!",
+        "name": "Cristina",
+        "initials": "C"
       },
       {
-        "quote": "Have you gone through the program? Share your experience.",
-        "name": "Coming soon",
-        "detail": ""
+        "quote": "Adriana has managed to solve from the root a chronic back pain problem of 3 years, that no other health expert had been able to solve — and she did it in just 1 month. At 27 I couldn't sit for more than 10 minutes without feeling sharp pain in my lower back...",
+        "name": "Alba",
+        "initials": "A"
       }
     ]
   },
@@ -237,31 +233,39 @@
     "items": [
       {
         "question": "Does this replace my doctor or treatment?",
-        "answer": "No. Mind Your Cells is a complement to medical treatment or protocol, never a substitute. My work consists of helping you implement in your daily life what the doctor has recommended. I do not make diagnoses or modify treatments."
+        "answer": "No. Mind Your Cells will never replace your medical guidelines. All professionals who collaborate with us will always respect your doctor and will be happy to work in a multidisciplinary way with them. Our work is to bring all our knowledge and professionalism to uphold your autonomy as a patient — so you can make a solid, free and informed decision about your health, cutting through the noise around what is considered healthy. Specialist programs are also offered to help you implement in your daily life what your healthcare professional — whether a doctor or from another discipline — has recommended. Treatments are never modified without the consent of the professional managing your care."
       },
       {
         "question": "Do I need to be following a medical protocol to access the programs?",
-        "answer": "It is not essential. Although the program is especially designed for people who already have a medical indication and need help implementing it, I also work with people seeking to optimize their health preventively. If you have doubts, book a free call and we'll assess together."
+        "answer": "No. If you have a medical condition that requires medical supervision, we will refer you to the professional we consider best suited to your case, working side by side to accelerate your recovery as much as possible while minimising pain and friction. No treatment will be given without first taking a full medical history. Although the premium programs are especially designed for people who already have a medical indication and need help implementing it, we also work with people looking to optimise their health preventively. If you have doubts, book a free call and we'll assess together."
       },
       {
         "question": "What are the sessions like?",
-        "answer": "Sessions are individual, by video call, in a personalized and unhurried space. The frequency and number of sessions depends on the program chosen. Between sessions you will receive resources, follow-up and support adapted to your pace."
+        "answer": "Sessions are individual, by video call, in a personalised and unhurried space. The frequency and number of sessions always depends on the patient's needs. If a program has been chosen, it will be one session per week, never losing sight of the patient's progress, needs and care. Between sessions you will receive resources, follow-up and support adapted to your pace."
       },
       {
         "question": "What is the difference between the three programs?",
-        "answer": "The intensity and depth of support. The Implementation Program (4 weeks) covers essential practical foundations. The Personalized Support (8 weeks) includes individual sessions and personalized weekly follow-up. The Comprehensive Follow-up (12 weeks) is the most intensive, with progressive adjustments and close supervision throughout the process."
+        "answer": "The intensity and depth of support. The Implementation Program (4 weeks) covers essential practical foundations. The Personalised Support (8 weeks) includes individual sessions and personalised weekly follow-up. The Comprehensive Follow-up (12 weeks) is the most intensive, with progressive adjustments and close supervision throughout the process."
       },
       {
         "question": "Can I pay in installments?",
-        "answer": "The Personalized Cellular Support (8 weeks) and the Comprehensive Cellular Follow-up (12 weeks) are available in 3 installments. The Cellular Implementation Program (4 weeks) requires a single payment. Additionally, if you pay the Comprehensive Follow-up in one payment, you save €500 compared to the installment price. Consult conditions during the free assessment call."
+        "answer": "The Personalised Cellular Support (8 weeks) and the Comprehensive Cellular Follow-up (12 weeks) are available in 3 installments. The Cellular Implementation Program (4 weeks) requires a single payment. Additionally, if you pay the Comprehensive Follow-up or Personalised Cellular Support in one payment, you save 10% compared to the installment price. Consult conditions during the free assessment call."
       },
       {
         "question": "When will I start noticing results?",
-        "answer": "It depends on your starting point and consistency of application. Many people perceive improvements in energy and mental clarity within the first weeks. Deep cellular changes are gradual and consolidate throughout the program."
+        "answer": "It depends on your starting point and consistency of application. Many people notice improvements in pain, mobility and mental clarity within the first few weeks. It is remarkable how quickly cells respond when you give them a little care. Deep cellular changes are gradual and consolidate throughout the program."
       },
       {
         "question": "What happens if I follow the program and don't notice improvements?",
-        "answer": "Each program includes a specific guarantee. If you follow the agreed plan and don't perceive improvements, we extend the support or provide additional sessions at no extra cost. My commitment is to you and to the process."
+        "answer": "Each program includes a specific guarantee. If you follow the agreed plan and don't perceive improvements, we extend the support or provide additional sessions at no extra cost. Our commitment is to you and to the process."
+      },
+      {
+        "question": "I'm not sure whether to start now — I have lots of professionals looking after me and I'm worried about getting more confused.",
+        "answer": "Our goal is to help you simplify things and make it easier to put into practice everything your healthcare professionals are telling you. We will always walk alongside you, and we will bring everything within our expertise to accelerate your recovery."
+      },
+      {
+        "question": "What if I've already seen many professionals and haven't noticed any improvement?",
+        "answer": "Those are the cases that are most grateful to us. By connecting the dots that others look at separately and collaborating across multiple disciplines, the results are remarkable."
       }
     ]
   },
@@ -275,44 +279,59 @@
   "footer": {
     "brand": "Mind Your Cells",
     "tagline": "Finessing your Cellular Health",
-    "practitioner": "Adriana Blanco Durán",
-    "credential": "Licensed Physiotherapist no. 9307",
-    "legal": "All support offered by Mind Your Cells is explicitly presented as a complement to medical treatment, never as a substitute. No diagnoses are made and no treatments are prescribed.",
-    "copyright": "© {year} Adriana Blanco Durán. All rights reserved.",
+    "quote": "Health is what your body gives back when you give it what it truly needs.",
     "nav": {
-      "title": "Navigation",
-      "individual": "Individual Consultation",
-      "programs": "Programs",
-      "faq": "FAQ"
+      "home": "Home",
+      "nosotros": "About",
+      "contacto": "Contact",
+      "planes": "Our Plans"
+    },
+    "legal": {
+      "aviso": "Legal notice",
+      "privacidad": "Privacy policy",
+      "accesibilidad": "Accessibility",
+      "cookies": "Cookies"
+    },
+    "newsletter": {
+      "heading": "Receive reflections on health, cellular balance and subtle changes that support lasting transformation.",
+      "placeholder": "Your email address",
+      "cta": "Subscribe"
     },
     "contact": {
-      "title": "Contact"
-    }
+      "name1": "Adriana Blanco",
+      "name2": "César Alberca",
+      "email": "adriana@mindyourcells.com",
+      "phone": "699 999 999",
+      "location": "Conde de Peñalver 15, Madrid, 28006, Spain"
+    },
+    "copyright": "© {year} Adriana Blanco Durán. All rights reserved."
   },
   "benefits": {
     "heading": "Improve your cellular health by optimizing your habits and environment.",
+    "cta": "Book your consultation now",
     "items": [
       {
         "id": "clarity",
         "title": "Clarity",
-        "description": "You understand why your body responds the way it does and what signals it needs to function at its best."
+        "items": ["Improve your mental clarity and concentration", "Reduce inflammation in your body"]
       },
       {
         "id": "energy",
         "title": "Energy",
-        "description": "You regain real vitality by optimizing the habits that most impact your daily cellular function."
+        "items": ["Increase your energy and reduce fatigue", "Improve the quality of your rest and sleep"]
       },
       {
         "id": "regulation",
         "title": "Regulation",
-        "description": "Your nervous, hormonal and immune systems recover the balance they need to self-regulate."
+        "items": ["Reduce your allergies", "Manage chronic pain"]
       }
     ]
   },
   "brandManifesto": {
     "tagline": "Finessing your Cellular Health",
     "body": "When the cell receives the right signals, the body recovers its capacity for self-regulation. Our work is to help you create that environment, from the most everyday to the most profound.",
-    "credentials": "Adriana Blanco Durán — Physiotherapist · PNEI · Osteopathy"
+    "credentials": "Adriana Blanco Durán — Physiotherapist · PNEI · Osteopathy",
+    "cta": "Explore our plans"
   },
   "team": {
     "breadcrumb": "About us",
@@ -356,7 +375,7 @@
       "button": "Book a consultation"
     }
   },
-  "paraQuienEs": {
+  "whoIsItFor": {
     "heading": "Mind Your Cells is for you if:",
     "items": [
       "You experience chronic fatigue, lack of energy, or wake up without feeling rested",
@@ -367,5 +386,73 @@
       "You want to understand why you feel the way you do and act from that knowledge"
     ],
     "cta": "Book a free call"
+  },
+  "planes": {
+    "breadcrumb": "Support plans",
+    "hero": {
+      "heading": "We connect the dots others look at separately",
+      "subheading": "Personalized plans that work on habits, environment, body and nervous system from a rigorous and human approach.",
+      "cta": "View support plans"
+    },
+    "options": {
+      "heading": "You can count on us:",
+      "individual": {
+        "tag": "Individual online consultation",
+        "intro": "To get started, assess your case, or for one-off sessions.",
+        "features": [
+          "Individual online session",
+          "Detailed analysis of your situation",
+          "Personalized guidance",
+          "Price: €110/session",
+          "Book at least 48 hours in advance"
+        ],
+        "note": "If after the assessment, the intervention of another collaborating healthcare professional is deemed necessary, you will be informed in advance of the approach and the corresponding fees.",
+        "cta": "Book individual consultation"
+      },
+      "premium": {
+        "tag": "Premium support program",
+        "intro": "If you need a deeper, sustained process of change over time.",
+        "features": [
+          "3 different types of programs",
+          "Structured support and follow-up",
+          "Integration of body, emotions, habits and environment",
+          "Adapted to each person",
+          "Price: depending on the program duration."
+        ],
+        "cta": "View programs"
+      }
+    },
+    "process": {
+      "heading": "What is the first consultation like?",
+      "during": {
+        "label": "During the session:",
+        "steps": [
+          {
+            "title": "We analyse your case in depth",
+            "description": "What is happening to you? What is your life like right now?"
+          },
+          {
+            "title": "We review your medical history and background",
+            "description": "Tell us what has brought you here."
+          },
+          {
+            "title": "We assess previous tests (if you have them)",
+            "description": "We translate results into information that truly helps you."
+          }
+        ]
+      },
+      "after": {
+        "label": "After the session:",
+        "items": [
+          "After the session you will receive personalised guidelines and materials.",
+          "If necessary, a referral or complementary tests will be indicated."
+        ]
+      }
+    },
+    "cta": {
+      "quote": "Taking care of your health means learning to listen to yourself and make decisions with discernment",
+      "primaryCta": "Book premium program",
+      "secondaryCta": "Book individual consultation"
+    }
   }
 }

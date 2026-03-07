@@ -3,10 +3,8 @@ import { Hero } from '@/components/sections/Hero'
 import { Benefits } from '@/components/sections/Benefits'
 import { BrandManifesto } from '@/components/sections/BrandManifesto'
 import { IndividualConsultation } from '@/components/sections/IndividualConsultation'
-import { ParaQuienEs } from '@/components/sections/ParaQuienEs'
-import { Packages } from '@/components/sections/Packages'
+import { WhoIsItFor } from '@/components/sections/WhoIsItFor'
 import { Testimonials } from '@/components/sections/Testimonials'
-import { FAQ } from '@/components/sections/FAQ'
 import { BookCallSection } from '@/components/sections/BookCallSection'
 import { Footer } from '@/components/sections/Footer'
 
@@ -21,15 +19,9 @@ export default function Home() {
 
       <BrandManifesto />
 
-      <IndividualConsultation />
-
-      <ParaQuienEs />
-
-      <Packages />
+      <WhoIsItFor />
 
       <Testimonials />
-
-      <FAQ />
 
       <BookCallSection />
 

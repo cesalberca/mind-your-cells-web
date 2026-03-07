@@ -70,9 +70,9 @@ Landing page for **Mind Your Cells**, a cellular optimization practice by **Adri
 ## Style (keep until told otherwise)
 - **Palette**: Stone #333233 (dark), Terracotta #682e2c, Soft Terracotta #a67d7b, Ceramic #dedbd5, Crude Ceramic #b1aa9f, Cream #f5f0eb
 - **Fonts** (all `next/font/local` from `app/fonts/`):
-  - **MADE Mellow** OTF → `--font-mellow` → `--font-display` → all h1–h6 globally + `font-display` class
-  - **Satoshi** Variable woff2 → `--font-satoshi` → `--font-sans` → body default
-  - **Playfair Display** Italic Variable TTF → `--font-playfair` → `--font-serif` → ALL italics (class: `font-serif italic`); also applied globally to `em`, `i`, `.italic` via `@layer base`
+  - **MADE Mellow** OTF → `--font-mellow` → `--font-heading` → all h1–h6 globally + `font-display` class
+  - **Satoshi** Variable woff2 → `--font-satoshi` → `--font-body` → body default
+  - **Playfair Display** Italic Variable TTF → `--font-playfair` → `--font-display` → ALL italics (class: `font-serif italic`); also applied globally to `em`, `i`, `.italic` via `@layer base`
   - No external font CDN (Fontshare link removed)
 - **Section pattern**: Hero=bg-stone, Banner=bg-soft-terracotta, TheProblem=bg-cream, AboutAdriana=bg-stone, Packages=bg-cream, Guarantees=bg-ceramic, Testimonials=bg-cream, FAQ=bg-ceramic, BookCallSection=bg-stone, Footer=bg-stone
 - **BookCallLink variants**: `variant="dark"` (outlined ceramic, default), `variant="light"` (outlined stone), `variant="solid"` (filled terracotta)

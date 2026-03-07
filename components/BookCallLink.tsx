@@ -13,9 +13,10 @@ const sizes = {
 } as const
 
 const variants = {
-  dark: 'border border-ceramic/70 text-ceramic hover:bg-ceramic/10 hover:border-ceramic',
-  light: 'border border-stone/60 text-stone hover:bg-stone hover:text-cream',
+  dark: 'border border-soft-terracotta/60 text-soft-terracotta hover:bg-soft-terracotta/10 hover:border-soft-terracotta hover:text-white',
+  light: 'border border-soft-terracotta text-soft-terracotta hover:bg-soft-terracotta hover:text-white',
   solid: 'bg-terracotta text-cream hover:bg-terracotta-light',
+  text: 'text-soft-terracotta underline underline-offset-4 hover:text-stone',
 } as const
 
 type BookCallLinkProps = Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'href' | 'target' | 'rel'> & {

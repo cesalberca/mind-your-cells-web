@@ -1,68 +1,98 @@
-import { useTranslations } from 'next-intl'
-import { SocialLinks } from '@/components/SocialLinks'
+'use client'
+
+import { useState } from 'react'
+import { useTranslations, useLocale } from 'next-intl'
 
 export function Footer() {
   const t = useTranslations('footer')
+  const locale = useLocale()
+  const [email, setEmail] = useState('')
 
-  const navLinks = [
-    { label: t('nav.individual'), href: '#consulta' },
-    { label: t('nav.programs'), href: '#programas' },
-    { label: t('nav.faq'), href: '#faq' },
-  ]
+  const planesHref = locale === 'es' ? `/${locale}/planes` : `/${locale}/plans`
 
   return (
-    <footer className="py-16 px-6 bg-stone">
+    <footer className="pt-16 pb-8 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Top grid */}
-        <div className="grid sm:grid-cols-3 gap-12 pb-12 border-b border-ceramic/8">
-          {/* Brand column */}
-          <div className="space-y-5">
-            <img src="/logo.svg" alt="Mind Your Cells" className="h-[14px] invert opacity-50" />
-            <p className="text-ceramic/25 text-[0.6rem] tracking-widest uppercase font-sans">
-              {t('tagline')}
-            </p>
-            <p className="text-ceramic/20 text-xs font-sans leading-relaxed">
-              {t('legal')}
-            </p>
+        <div className="grid md:grid-cols-3 gap-12 pb-12">
+          {/* Column 1: Quote + nav + legal */}
+          <div className="space-y-8">
+            <p className="text-stone/50 text-sm font-sans font-light leading-relaxed max-w-xs">{t('quote')}</p>
+
+            <nav className="space-y-2">
+              <a
+                href={`/${locale}`}
+                className="block text-stone/60 text-sm font-sans hover:text-stone transition-colors"
+              >
+                {t('nav.home')}
+              </a>
+              <a href="#" className="block text-stone/60 text-sm font-sans hover:text-stone transition-colors">
+                {t('nav.nosotros')}
+              </a>
+              <a href="#" className="block text-stone/60 text-sm font-sans hover:text-stone transition-colors">
+                {t('nav.contacto')}
+              </a>
+              <a href={planesHref} className="block text-stone/60 text-sm font-sans hover:text-stone transition-colors">
+                {t('nav.planes')}
+              </a>
+            </nav>
+
+            <nav className="space-y-2">
+              <a href="#" className="block text-stone/40 text-xs font-sans hover:text-stone/60 transition-colors">
+                {t('legal.aviso')}
+              </a>
+              <a href="#" className="block text-stone/40 text-xs font-sans hover:text-stone/60 transition-colors">
+                {t('legal.privacidad')}
+              </a>
+              <a href="#" className="block text-stone/40 text-xs font-sans hover:text-stone/60 transition-colors">
+                {t('legal.accesibilidad')}
+              </a>
+              <a href="#" className="block text-stone/40 text-xs font-sans hover:text-stone/60 transition-colors">
+                {t('legal.cookies')}
+              </a>
+            </nav>
           </div>
 
-          {/* Nav column */}
-          <div className="space-y-5">
-            <p className="text-ceramic/30 text-[0.6rem] tracking-widest uppercase font-sans">
-              {t('nav.title')}
-            </p>
-            <ul className="space-y-3">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className="text-ceramic/40 hover:text-ceramic/70 text-sm font-sans transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Column 2: Newsletter */}
+          <div className="space-y-6">
+            <p className="text-stone/55 text-sm font-sans font-light leading-relaxed">{t('newsletter.heading')}</p>
 
-          {/* Contact column */}
-          <div className="space-y-5">
-            <p className="text-ceramic/30 text-[0.6rem] tracking-widest uppercase font-sans">
-              {t('contact.title')}
-            </p>
-            <div className="space-y-1">
-              <p className="text-ceramic/50 text-sm font-sans font-medium">{t('practitioner')}</p>
-              <p className="text-ceramic/25 text-xs font-sans">{t('credential')}</p>
+            <div className="space-y-4">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder={t('newsletter.placeholder')}
+                className="w-full bg-transparent border-b border-stone/25 pb-2 text-sm font-sans text-stone placeholder:text-stone/30 focus:outline-none focus:border-stone/50 transition-colors"
+              />
+              <button
+                type="button"
+                className="text-stone/50 text-[0.65rem] tracking-widest uppercase font-sans hover:text-stone transition-colors"
+              >
+                {t('newsletter.cta')}
+              </button>
             </div>
-            <SocialLinks variant="dark" />
+          </div>
+
+          {/* Column 3: Contact */}
+          <div className="space-y-6 text-right">
+            <div className="space-y-1">
+              <p className="text-stone/70 text-sm font-sans">{t('contact.name1')}</p>
+              <p className="text-stone/70 text-sm font-sans">{t('contact.name2')}</p>
+              <p className="text-stone/45 text-sm font-sans">{t('contact.email')}</p>
+            </div>
+
+            <div className="space-y-1">
+              <p className="text-stone/45 text-sm font-sans">{t('contact.phone')}</p>
+              <p className="text-stone/45 text-sm font-sans">{t('contact.location')}</p>
+            </div>
           </div>
         </div>
 
-        {/* Bottom row */}
-        <div className="pt-8 text-center">
-          <p className="text-ceramic/15 text-xs font-sans">
-            {t('copyright', { year: new Date().getFullYear() })}
-          </p>
+        {/* Bottom: logo + tagline centered */}
+        <div className="border-t border-stone/10 pt-8 text-center space-y-2">
+          <img src="/logo.svg" alt="Mind Your Cells" className="h-[14px] mx-auto opacity-40" />
+          <p className="text-stone/30 text-[0.6rem] tracking-widest uppercase font-sans">{t('tagline')}</p>
         </div>
       </div>
     </footer>

@@ -1,34 +1,28 @@
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
+import { RoundedCard } from '@/components/RoundedCard'
 
 export function BrandManifesto() {
   const t = useTranslations('brandManifesto')
 
   return (
-    <section className="py-28 px-6 bg-stone relative overflow-hidden">
-      {/* Pill decoration */}
-      <div className="absolute right-12 top-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none hidden md:block">
-        <img src="/pill.svg" alt="" aria-hidden="true" className="h-64" />
-      </div>
+    <section className="py-8">
+      <RoundedCard className="bg-stone py-32 px-8">
+        <div className="max-w-lg mx-auto text-center flex flex-col items-center">
+          <img src="/pill.svg" alt="Mind Your Cells" className="h-24 mx-auto mb-12 invert opacity-60" />
 
-      <div className="max-w-3xl mx-auto text-center relative z-10">
-        <img
-          src="/logo.svg"
-          alt="Mind Your Cells"
-          className="h-5 mx-auto mb-6 invert opacity-50"
-        />
+          <p className="text-ceramic/60 text-[0.6rem] tracking-[0.25em] uppercase font-sans mb-8">{t('tagline')}</p>
 
-        <p className="text-ceramic/25 text-[0.6rem] tracking-widest uppercase font-sans mb-14">
-          {t('tagline')}
-        </p>
+          <p className="text-ceramic/80 text-base font-light leading-relaxed font-sans">{t('body')}</p>
 
-        <p className="text-ceramic/70 text-xl sm:text-2xl font-light leading-relaxed font-sans max-w-2xl mx-auto">
-          {t('body')}
-        </p>
-
-        <p className="text-ceramic/30 text-xs font-sans mt-12 tracking-wide">
-          {t('credentials')}
-        </p>
-      </div>
+          <Link
+            href="#programas"
+            className="mt-16 text-soft-terracotta text-[0.6rem] tracking-[0.25em] uppercase font-sans underline underline-offset-4 hover:text-white transition-colors"
+          >
+            {t('cta')}
+          </Link>
+        </div>
+      </RoundedCard>
     </section>
   )
 }

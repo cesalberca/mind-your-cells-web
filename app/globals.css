@@ -19,9 +19,9 @@
   --color-cream: #f5f0eb;
 
   /* Fonts */
-  --font-display: var(--font-mellow);
-  --font-sans: var(--font-satoshi), system-ui, -apple-system, sans-serif;
-  --font-serif: var(--font-playfair);
+  --font-heading: var(--font-mellow);
+  --font-body: var(--font-satoshi), system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-playfair);
 
   /* shadcn tokens */
   --color-sidebar-ring: var(--sidebar-ring);
@@ -103,7 +103,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-sans, sans-serif), sans-serif;
+    font-family: var(--font-body, sans-serif), sans-serif;
     font-weight: 500;
   }
   html {
@@ -115,11 +115,12 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-display, 'Georgia', serif), serif;
+    font-family: var(--font-heading, "Georgia", serif), serif;
+    @apply font-light;
   }
   em,
   i {
-    font-family: var(--font-serif, 'Georgia', serif), serif;
+    font-family: var(--font-display, "Georgia", serif), serif;
     font-style: italic;
     font-weight: 300;
   }

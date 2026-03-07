@@ -1,8 +1,13 @@
+'use client'
+
+import { useRef, useEffect } from 'react'
+
 type ScutoidMaskProps = {
   src: string
   alt: string
   variant: 1 | 2
   className?: string
+  parallaxStrength?: number
 }
 
 const CUTOUTS = {
@@ -18,12 +23,33 @@ const CUTOUTS = {
   },
 } as const
 
-export function ScutoidMask({ src, alt, variant, className }: ScutoidMaskProps) {
+export function ScutoidMask({ src, alt, variant, className, parallaxStrength = 0.1 }: ScutoidMaskProps) {
   const { width, height, path } = CUTOUTS[variant]
   const id = `scutoid-mask-${variant}`
+  const svgRef = useRef<SVGSVGElement>(null)
+  const imageRef = useRef<SVGImageElement>(null)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!svgRef.current || !imageRef.current) return
+      const rect = svgRef.current.getBoundingClientRect()
+      const elementCenter = rect.top + rect.height / 2
+      const viewportCenter = window.innerHeight / 2
+      const offset = (elementCenter - viewportCenter) * parallaxStrength
+      imageRef.current.style.transform = `translateY(${offset}px)`
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll()
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [parallaxStrength])
+
+  // Make the image taller than the viewBox so shifts don't reveal empty space
+  const extra = height * 0.3
 
   return (
     <svg
+      ref={svgRef}
       viewBox={`0 0 ${width} ${height}`}
       xmlns="http://www.w3.org/2000/svg"
       className={className}
@@ -35,16 +61,20 @@ export function ScutoidMask({ src, alt, variant, className }: ScutoidMaskProps) 
           <path d={path} />
         </clipPath>
       </defs>
+      {/* clipPath on the group keeps the mask fixed; only the inner image moves */}
       {/* biome-ignore lint/a11y/noSvgWithoutTitle: aria-label on svg covers accessibility */}
-      <image
-        href={src}
-        x="0"
-        y="0"
-        width={width}
-        height={height}
-        preserveAspectRatio="xMidYMid slice"
-        clipPath={`url(#${id})`}
-      />
+      <g clipPath={`url(#${id})`}>
+        <image
+          ref={imageRef}
+          href={src}
+          x="0"
+          y={-extra / 2}
+          width={width}
+          height={height + extra}
+          preserveAspectRatio="xMidYMid slice"
+          style={{ willChange: 'transform' }}
+        />
+      </g>
     </svg>
   )
 }

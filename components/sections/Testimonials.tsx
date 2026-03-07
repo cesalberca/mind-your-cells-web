@@ -1,32 +1,40 @@
 import { useTranslations } from 'next-intl'
 
-type TestimonialPlaceholder = {
+type TestimonialItem = {
   quote: string
   name: string
-  detail: string
+  initials: string
 }
 
 export function Testimonials() {
   const t = useTranslations('testimonials')
-  const placeholders = t.raw('placeholders') as TestimonialPlaceholder[]
+  const items = t.raw('items') as TestimonialItem[]
 
   return (
-    <section id="testimonios" className="py-24 px-6 bg-cream">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-stone mb-4 text-center">
+    <section id="testimonials" className="relative py-24 px-6 overflow-hidden">
+      <img
+        src="/images/MYC29_1SVG.svg"
+        alt=""
+        aria-hidden="true"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-4xl pointer-events-none select-none"
+      />
+
+      <div className="relative max-w-5xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-stone mb-20 text-center max-w-2xl mx-auto leading-snug">
           {t('heading')}
         </h2>
-        <p className="text-center text-stone/50 mb-16 text-base font-sans">{t('subheading')}</p>
 
-        <div className="grid sm:grid-cols-3 gap-px bg-crude-ceramic/30">
-          {placeholders.map((item, i) => (
-            // biome-ignore lint/suspicious/noArrayIndexKey: placeholder cards with static data
-            <div
-              key={i}
-              className="bg-cream hover:bg-white transition-colors p-8 text-center"
-            >
-              <p className="text-stone/25 text-sm italic leading-relaxed mb-5 font-sans">{item.quote}</p>
-              <p className="text-stone/20 text-xs font-sans tracking-widest uppercase">{item.name}</p>
+        <div className="grid sm:grid-cols-3 gap-12">
+          {items.map((item, i) => (
+            // biome-ignore lint/suspicious/noArrayIndexKey: static testimonial cards
+            <div key={i} className="flex flex-col">
+              <div className="w-14 h-14 rounded-full bg-stone/15 flex items-center justify-center mb-6 flex-shrink-0">
+                <span className="text-stone/50 text-base font-light font-sans">{item.initials}</span>
+              </div>
+
+              <p className="text-stone/65 text-sm italic leading-relaxed mb-8 font-serif flex-1">{item.quote}</p>
+
+              <p className="text-stone/35 text-[0.6rem] font-sans tracking-widest uppercase">{item.name}</p>
             </div>
           ))}
         </div>

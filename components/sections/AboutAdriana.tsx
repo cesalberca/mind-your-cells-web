@@ -11,7 +11,7 @@ export function AboutAdriana() {
   const approachItems = t.raw('approachItems') as ApproachItem[]
 
   return (
-    <section id="sobre-mi" className="py-24 px-6 bg-stone">
+    <section id="about" className="py-24 px-6 bg-stone">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-ceramic mb-12 text-center">
           {t('heading')}
