@@ -314,6 +314,48 @@
     "body": "When the cell receives the right signals, the body recovers its capacity for self-regulation. Our work is to help you create that environment, from the most everyday to the most profound.",
     "credentials": "Adriana Blanco Durán — Physiotherapist · PNEI · Osteopathy"
   },
+  "team": {
+    "breadcrumb": "About us",
+    "hero": {
+      "headline": "We are Mind Your Cells",
+      "headlineAccent": "and we want to help you.",
+      "description": "Because information is power. When we have it, we can choose and make decisions with respect and care for our body and for ourselves as human beings.",
+      "cta": "View support plans"
+    },
+    "adriana": {
+      "name": "Adriana Blanco",
+      "contactCta": "You can contact me here",
+      "bio1": "I am a physiotherapist, with six years of training in osteopathic medicine and a deep curiosity for understanding how the body tells its own story.",
+      "bio2": "While I continue exploring the foundational principles of Traditional Chinese Medicine, Ayurveda and cellular medicine, my approach is based on observing how the body expresses itself: through movement, breathing, skin and tension.",
+      "bio3": "In each session I accompany you in your entirety, not just your physical symptoms. I listen to the subtle signals of the autonomic nervous system, understanding that genuine support is born from honoring both science and the human dimension behind every experience.",
+      "bio4": "Together we explore gentle and meaningful ways to restore balance and reconnect with the body's natural wisdom."
+    },
+    "others": {
+      "heading": "Other professionals who accompany us and will be there for you if you need them",
+      "members": {
+        "juanJose": {
+          "name": "Juan José Díez",
+          "specialty": "Health specialty",
+          "description": "We share how they can directly help the patients they attend."
+        },
+        "maria": {
+          "name": "María Lozano",
+          "specialty": "Health specialty",
+          "description": "We share how they can directly help the patients they attend."
+        },
+        "estrella": {
+          "name": "Estrella Sánchez",
+          "specialty": "Health specialty",
+          "description": "We share how they can directly help the patients they attend."
+        }
+      }
+    },
+    "cta": {
+      "quote1": "Stop trying things without knowing why.",
+      "quote2": "Let's connect the dots others look at separately.",
+      "button": "Book a consultation"
+    }
+  },
   "paraQuienEs": {
     "heading": "Mind Your Cells is for you if:",
     "items": [

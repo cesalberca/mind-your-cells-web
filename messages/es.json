@@ -314,6 +314,48 @@
     "body": "Cuando la célula recibe las señales adecuadas, el cuerpo recupera su capacidad de autorregulación. Nuestro trabajo es ayudarte a crear ese entorno, desde lo más cotidiano hasta lo más profundo.",
     "credentials": "Adriana Blanco Durán — Fisioterapeuta · PNIE · Osteopatía"
   },
+  "team": {
+    "breadcrumb": "Nosotros",
+    "hero": {
+      "headline": "Somos Mind Your Cells",
+      "headlineAccent": "y queremos ayudarte.",
+      "description": "Porque la información es poder. Cuando la tenemos, podemos elegir y tomar decisiones desde el respeto y el cuidado a nuestro cuerpo y al ser humano.",
+      "cta": "Ver planes de acompañamiento"
+    },
+    "adriana": {
+      "name": "Adriana Blanco",
+      "contactCta": "Puedes contactar conmigo aquí",
+      "bio1": "Soy fisioterapeuta, con seis años de formación en medicina osteopática y una curiosidad profunda por entender cómo el cuerpo cuenta su propia historia.",
+      "bio2": "Mientras continúo explorando los principios fundamentales de la Medicina Tradicional China, el Ayurveda y la medicina celular, mi enfoque se basa en observar cómo el cuerpo se expresa: a través del movimiento, la respiración, la piel y la tensión.",
+      "bio3": "En cada sesión te acompaño en tu totalidad, no solo a tus síntomas físicos. Escucho las señales sutiles del sistema nervioso autónomo, entendiendo que un acompañamiento real nace de honrar tanto la ciencia como la dimensión humana que hay detrás de cada experiencia.",
+      "bio4": "Juntos exploramos formas suaves y significativas de recuperar el equilibrio y reconectar con la sabiduría natural del cuerpo."
+    },
+    "others": {
+      "heading": "Otros profesionales que nos acompañan y estarán contigo si lo necesitas",
+      "members": {
+        "juanJose": {
+          "name": "Juan José Díez",
+          "specialty": "Especialidad sanitaria",
+          "description": "Contamos en qué puede ayudar directamente a los pacientes a los que atienda."
+        },
+        "maria": {
+          "name": "María Lozano",
+          "specialty": "Especialidad sanitaria",
+          "description": "Contamos en qué puede ayudar directamente a los pacientes a los que atienda."
+        },
+        "estrella": {
+          "name": "Estrella Sánchez",
+          "specialty": "Especialidad sanitaria",
+          "description": "Contamos en qué puede ayudar directamente a los pacientes a los que atienda."
+        }
+      }
+    },
+    "cta": {
+      "quote1": "Deja de probar cosas sin saber por qué.",
+      "quote2": "Conectemos los puntos que otros miran por separado.",
+      "button": "Reservar consulta"
+    }
+  },
   "paraQuienEs": {
     "heading": "Mind Your Cells es para ti si:",
     "items": [
