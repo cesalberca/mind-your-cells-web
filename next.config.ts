@@ -2,6 +2,10 @@ import createNextIntlPlugin from 'next-intl/plugin'
 
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts')
 
-const nextConfig = {}
+const nextConfig = {
+  experimental: {
+    viewTransition: true,
+  },
+}
 
 export default withNextIntl(nextConfig)

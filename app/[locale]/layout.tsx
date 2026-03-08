@@ -4,7 +4,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
-import { FathomAnalytics } from '@/components/Fathom'
+import { FathomAnalytics } from '@/components/fathom'
 import '../globals.css'
 import type { ReactNode } from 'react'
 
@@ -16,7 +16,7 @@ const mellow = localFont({
     { path: '../fonts/mellow/MADEMellowPERSONALUSE-SemiBold.otf', weight: '600', style: 'normal' },
     { path: '../fonts/mellow/MADEMellowPERSONALUSE-Bold.otf', weight: '700', style: 'normal' },
   ],
-  variable: '--font-heading',
+  variable: '--font-mellow',
 })
 
 const satoshi = localFont({
@@ -24,12 +24,12 @@ const satoshi = localFont({
     { path: '../fonts/satoshi/Satoshi-Variable.woff2', weight: '300 900', style: 'normal' },
     { path: '../fonts/satoshi/Satoshi-VariableItalic.woff2', weight: '300 900', style: 'italic' },
   ],
-  variable: '--font-body',
+  variable: '--font-satoshi',
 })
 
 const playfair = localFont({
   src: [{ path: '../fonts/playfair/PlayfairDisplay-Italic-VariableFont_wght.ttf', weight: '400 900', style: 'italic' }],
-  variable: '--font-display',
+  variable: '--font-playfair',
 })
 
 type Props = {
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEs = locale === 'es'
 
   return {
-    metadataBase: new URL('https://www.mindyourcells.es/'),
+    metadataBase: new URL('https://www.mindyourcells.com/'),
     title: isEs
       ? 'Mind Your Cells | Optimización Celular — Adriana Blanco Durán'
       : 'Mind Your Cells | Cellular Optimization — Adriana Blanco Durán',
@@ -85,7 +85,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: isEs
         ? 'Acompañamiento integrativo personalizado. Fisioterapeuta, PNIE, Osteopatía. Adriana Blanco Durán.'
         : 'Personalized integrative support. Physiotherapist, PNEI, Osteopathy. Adriana Blanco Durán.',
-      url: `https://www.mindyourcells.es/${locale}`,
+      url: isEs ? 'https://www.mindyourcells.com/es' : 'https://www.mindyourcells.com',
       siteName: t('brand'),
       locale: isEs ? 'es_ES' : 'en_US',
       type: 'website',
@@ -102,10 +102,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       follow: false,
     },
     alternates: {
-      canonical: `https://www.mindyourcells.es/${locale}`,
+      canonical: isEs ? 'https://www.mindyourcells.com/es' : 'https://www.mindyourcells.com',
       languages: {
-        es: 'https://www.mindyourcells.es/es',
-        en: 'https://www.mindyourcells.es/en',
+        es: 'https://www.mindyourcells.com/es',
+        en: 'https://www.mindyourcells.com',
+        'x-default': 'https://www.mindyourcells.com',
       },
     },
   }
@@ -127,7 +128,10 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale}>
       <head>
-        <link rel="canonical" href={`https://www.mindyourcells.es/${locale}`} />
+        <link
+          rel="canonical"
+          href={locale === 'es' ? 'https://www.mindyourcells.com/es' : 'https://www.mindyourcells.com'}
+        />
         <script
           type="application/ld+json"
           // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD structured data
@@ -137,7 +141,7 @@ export default async function LocaleLayout({ children, params }: Props) {
               '@type': 'Person',
               name: 'Adriana Blanco Durán',
               jobTitle: 'Fisioterapeuta, Especialista en Optimización Celular',
-              url: 'https://www.mindyourcells.es/',
+              url: 'https://www.mindyourcells.com/',
               sameAs: [
                 'https://www.linkedin.com/in/adriana-blanco-duran/',
                 'https://www.instagram.com/mindyourcells',

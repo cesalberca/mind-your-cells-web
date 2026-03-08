@@ -3,7 +3,7 @@
     "brand": "Mind Your Cells",
     "tagline": "Finessing your Cellular Health",
     "nav": {
-      "about": "Sobre mí",
+      "about": "Nosotros",
       "programs": "Programas",
       "testimonials": "Testimonios",
       "faq": "FAQ"
@@ -171,7 +171,10 @@
     "purpose": "Para empezar, valorar tu caso o acompañamientos puntuales.",
     "session": {
       "title": "Sesión individual online",
-      "features": ["Análisis detallado de tu situación", "Orientación personalizada"],
+      "features": [
+        "Análisis detallado de tu situación",
+        "Orientación personalizada"
+      ],
       "price": "110",
       "currency": "€",
       "priceLabel": "/ sesión",
@@ -282,26 +285,26 @@
     "quote": "Salud es lo que el cuerpo te devuelve cuando le das lo que verdaderamente necesita.",
     "nav": {
       "home": "Home",
-      "nosotros": "Nosotros",
-      "contacto": "Contacto",
-      "planes": "Nuestros Planes"
+      "about": "Nosotros",
+      "contact": "Contacto",
+      "plans": "Nuestros Planes"
     },
     "legal": {
-      "aviso": "Aviso legal",
-      "privacidad": "Política de privacidad",
-      "accesibilidad": "Accesibilidad",
-      "cookies": "Cookies"
+      "notice": "Aviso legal",
+      "privacy": "Política de privacidad"
     },
     "newsletter": {
       "heading": "Recibe reflexiones sobre la salud, equilibrio celular y cambios sutiles que respaldan una transformación duradera.",
       "placeholder": "Dinos tu email para escribirte pronto",
-      "cta": "Suscribirme"
+      "cta": "Suscribirme",
+      "submitting": "Enviando...",
+      "successMessage": "Apuntada. Hasta pronto.",
+      "errorMessage": "Algo salió mal. Inténtalo de nuevo."
     },
     "contact": {
       "name1": "Adriana Blanco",
-      "name2": "César Alberca",
       "email": "adriana@mindyourcells.com",
-      "phone": "699 999 999",
+      "emailSubject": "Consulta desde mindyourcells.com",
       "location": "Conde de Peñalver 15, Madrid, 28006"
     },
     "copyright": "© {year} Adriana Blanco Durán. Todos los derechos reservados."
@@ -313,17 +316,26 @@
       {
         "id": "claridad",
         "title": "Claridad",
-        "items": ["Mejora tu claridad mental y la concentración", "Reduce la inflamación de tu cuerpo"]
+        "items": [
+          "Mejora tu claridad mental y la concentración",
+          "Reduce la inflamación de tu cuerpo"
+        ]
       },
       {
         "id": "energia",
         "title": "Energía",
-        "items": ["Incrementa tu energía y reduce la fatiga por cansancio", "Mejora la calidad de tu descanso y sueño"]
+        "items": [
+          "Incrementa tu energía y reduce la fatiga por cansancio",
+          "Mejora la calidad de tu descanso y sueño"
+        ]
       },
       {
         "id": "regulacion",
         "title": "Regulación",
-        "items": ["Disminuye tus alergias", "Gestión del dolor crónico"]
+        "items": [
+          "Disminuye tus alergias",
+          "Gestión del dolor crónico"
+        ]
       }
     ]
   },
@@ -387,7 +399,7 @@
     ],
     "cta": "Reservar llamada gratuita"
   },
-  "planes": {
+  "plans": {
     "breadcrumb": "Planes de acompañamiento",
     "hero": {
       "heading": "Conectamos los puntos que otros miran por separado",
@@ -453,6 +465,99 @@
       "quote": "Cuidar tu salud es aprender a escucharte y a tomar decisiones con criterio",
       "primaryCta": "Reservar programa premium",
       "secondaryCta": "Reservar consulta individual"
+    }
+  },
+  "privacy": {
+    "breadcrumb": "Política de privacidad",
+    "heading": "Política de privacidad",
+    "sections": [
+      {
+        "title": "1. Responsable del tratamiento",
+        "content": "Adriana Blanco Durán, con domicilio en Conde de Peñalver 15, Madrid, 28006, España. Correo electrónico: adriana@mindyourcells.com."
+      },
+      {
+        "title": "2. Datos que recopilamos",
+        "content": "Recopilamos los datos que usted nos facilita voluntariamente a través de los formularios de contacto o reserva: nombre, dirección de correo electrónico y cualquier información que incluya en su mensaje. No recopilamos datos especialmente protegidos sin su consentimiento explícito."
+      },
+      {
+        "title": "3. Finalidad del tratamiento",
+        "intro": "Los datos recogidos se utilizan exclusivamente para:",
+        "items": [
+          "Gestionar la reserva de consultas y programas.",
+          "Responder a sus consultas.",
+          "Enviar comunicaciones sobre salud y bienestar, si ha dado su consentimiento."
+        ]
+      },
+      {
+        "title": "4. Base legal",
+        "content": "El tratamiento se basa en su consentimiento (art. 6.1.a RGPD) y, en su caso, en la ejecución de un contrato de prestación de servicios (art. 6.1.b RGPD)."
+      },
+      {
+        "title": "5. Conservación de datos",
+        "content": "Los datos se conservarán mientras dure la relación contractual o durante el tiempo necesario para atender responsabilidades legales. Una vez cumplido el plazo, los datos serán suprimidos con medidas de seguridad adecuadas."
+      },
+      {
+        "title": "6. Destinatarios",
+        "content": "No cedemos sus datos a terceros, salvo obligación legal. Utilizamos proveedores de servicios (alojamiento web, plataformas de agenda) que actúan como encargados del tratamiento bajo las garantías del RGPD."
+      },
+      {
+        "title": "7. Sus derechos",
+        "content": "Puede ejercer los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición enviando un correo a adriana@mindyourcells.com. Tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es)."
+      },
+      {
+        "title": "8. Seguridad",
+        "content": "Adoptamos las medidas técnicas y organizativas necesarias para garantizar la seguridad de sus datos y evitar su alteración, pérdida, tratamiento o acceso no autorizado."
+      }
+    ]
+  },
+  "legal": {
+    "breadcrumb": "Aviso legal",
+    "heading": "Aviso legal",
+    "sections": [
+      {
+        "title": "1. Titular del sitio web",
+        "content": "Adriana Blanco Durán\nDomicilio: Conde de Peñalver 15, Madrid, 28006, España\nCorreo electrónico: adriana@mindyourcells.com"
+      },
+      {
+        "title": "2. Objeto",
+        "content": "El presente aviso legal regula el uso del sitio web mindyourcells.com. La utilización del sitio web implica la aceptación plena de las condiciones aquí recogidas."
+      },
+      {
+        "title": "3. Actividad profesional",
+        "content": "Adriana Blanco Durán es fisioterapeuta colegiada nº 9307. Todo el acompañamiento ofrecido a través de este sitio web se presenta como complemento al tratamiento médico, nunca como sustituto. No se realizan diagnósticos ni se prescriben tratamientos."
+      },
+      {
+        "title": "4. Propiedad intelectual",
+        "content": "Todos los contenidos de este sitio web (textos, imágenes, diseño, logotipos) son propiedad de Adriana Blanco Durán o de terceros que han autorizado su uso. Queda prohibida su reproducción, distribución o comunicación pública sin autorización expresa."
+      },
+      {
+        "title": "5. Exclusión de responsabilidad",
+        "content": "Los contenidos de este sitio web tienen carácter informativo y no constituyen consejo médico. Adriana Blanco Durán no se responsabiliza de las decisiones tomadas por los usuarios basándose en la información publicada."
+      },
+      {
+        "title": "6. Ley aplicable",
+        "content": "Este aviso legal se rige por la legislación española. Para cualquier controversia, las partes se someten a los juzgados y tribunales de Madrid."
+      }
+    ]
+  },
+  "call": {
+    "breadcrumb": "Reservar",
+    "hero": {
+      "heading": "Reserva tu",
+      "headingAccent": "llamada",
+      "subheading": "Elige la opción que mejor se adapta a tu momento."
+    },
+    "free": {
+      "tag": "Gratuita · 15 minutos",
+      "heading": "Llamada de descubrimiento",
+      "description": "Una primera toma de contacto para conocernos, entender dónde estás y ver si podemos trabajar juntas. Sin compromiso.",
+      "cta": "Reservar llamada gratuita"
+    },
+    "paid": {
+      "tag": "Consulta individual · 60 minutos",
+      "heading": "Consulta individual",
+      "description": "Una sesión en profundidad para analizar tu situación, identificar bloqueos y establecer un plan de acción personalizado.",
+      "cta": "Reservar consulta"
     }
   }
 }

@@ -3,7 +3,7 @@
     "brand": "Mind Your Cells",
     "tagline": "Finessing your Cellular Health",
     "nav": {
-      "about": "About me",
+      "about": "About Us",
       "programs": "Programs",
       "testimonials": "Testimonials",
       "faq": "FAQ"
@@ -171,7 +171,10 @@
     "purpose": "To get started, assess your case, or for one-off sessions.",
     "session": {
       "title": "Individual online session",
-      "features": ["Detailed analysis of your situation", "Personalized guidance"],
+      "features": [
+        "Detailed analysis of your situation",
+        "Personalized guidance"
+      ],
       "price": "110",
       "currency": "€",
       "priceLabel": "/ session",
@@ -282,26 +285,26 @@
     "quote": "Health is what your body gives back when you give it what it truly needs.",
     "nav": {
       "home": "Home",
-      "nosotros": "About",
-      "contacto": "Contact",
-      "planes": "Our Plans"
+      "about": "About",
+      "contact": "Contact",
+      "plans": "Our Plans"
     },
     "legal": {
-      "aviso": "Legal notice",
-      "privacidad": "Privacy policy",
-      "accesibilidad": "Accessibility",
-      "cookies": "Cookies"
+      "notice": "Legal notice",
+      "privacy": "Privacy policy"
     },
     "newsletter": {
       "heading": "Receive reflections on health, cellular balance and subtle changes that support lasting transformation.",
       "placeholder": "Your email address",
-      "cta": "Subscribe"
+      "cta": "Subscribe",
+      "submitting": "Sending...",
+      "successMessage": "You're in. Talk soon.",
+      "errorMessage": "Something went wrong. Please try again."
     },
     "contact": {
       "name1": "Adriana Blanco",
-      "name2": "César Alberca",
       "email": "adriana@mindyourcells.com",
-      "phone": "699 999 999",
+      "emailSubject": "Enquiry from mindyourcells.com",
       "location": "Conde de Peñalver 15, Madrid, 28006, Spain"
     },
     "copyright": "© {year} Adriana Blanco Durán. All rights reserved."
@@ -313,17 +316,26 @@
       {
         "id": "clarity",
         "title": "Clarity",
-        "items": ["Improve your mental clarity and concentration", "Reduce inflammation in your body"]
+        "items": [
+          "Improve your mental clarity and concentration",
+          "Reduce inflammation in your body"
+        ]
       },
       {
         "id": "energy",
         "title": "Energy",
-        "items": ["Increase your energy and reduce fatigue", "Improve the quality of your rest and sleep"]
+        "items": [
+          "Increase your energy and reduce fatigue",
+          "Improve the quality of your rest and sleep"
+        ]
       },
       {
         "id": "regulation",
         "title": "Regulation",
-        "items": ["Reduce your allergies", "Manage chronic pain"]
+        "items": [
+          "Reduce your allergies",
+          "Manage chronic pain"
+        ]
       }
     ]
   },
@@ -387,7 +399,7 @@
     ],
     "cta": "Book a free call"
   },
-  "planes": {
+  "plans": {
     "breadcrumb": "Support plans",
     "hero": {
       "heading": "We connect the dots others look at separately",
@@ -453,6 +465,99 @@
       "quote": "Taking care of your health means learning to listen to yourself and make decisions with discernment",
       "primaryCta": "Book premium program",
       "secondaryCta": "Book individual consultation"
+    }
+  },
+  "privacy": {
+    "breadcrumb": "Privacy policy",
+    "heading": "Privacy policy",
+    "sections": [
+      {
+        "title": "1. Data controller",
+        "content": "Adriana Blanco Durán, address: Conde de Peñalver 15, Madrid, 28006, Spain. Email: adriana@mindyourcells.com."
+      },
+      {
+        "title": "2. Data we collect",
+        "content": "We collect data you voluntarily provide through contact or booking forms: name, email address and any information included in your message. We do not collect specially protected data without your explicit consent."
+      },
+      {
+        "title": "3. Purpose of processing",
+        "intro": "Collected data is used exclusively for:",
+        "items": [
+          "Managing consultation and program bookings.",
+          "Responding to your enquiries.",
+          "Sending health and wellbeing communications, if you have given consent."
+        ]
+      },
+      {
+        "title": "4. Legal basis",
+        "content": "Processing is based on your consent (Art. 6.1.a GDPR) and, where applicable, on the performance of a service contract (Art. 6.1.b GDPR)."
+      },
+      {
+        "title": "5. Data retention",
+        "content": "Data will be retained for the duration of the contractual relationship or as long as necessary to meet legal obligations. Once the period has elapsed, data will be deleted with appropriate security measures."
+      },
+      {
+        "title": "6. Recipients",
+        "content": "We do not share your data with third parties, except as required by law. We use service providers (web hosting, scheduling platforms) acting as data processors under GDPR guarantees."
+      },
+      {
+        "title": "7. Your rights",
+        "content": "You may exercise your rights of access, rectification, erasure, restriction, portability and objection by emailing adriana@mindyourcells.com. You have the right to lodge a complaint with the Spanish Data Protection Agency (www.aepd.es)."
+      },
+      {
+        "title": "8. Security",
+        "content": "We adopt the technical and organisational measures necessary to ensure the security of your data and prevent its alteration, loss, processing or unauthorised access."
+      }
+    ]
+  },
+  "legal": {
+    "breadcrumb": "Legal notice",
+    "heading": "Legal notice",
+    "sections": [
+      {
+        "title": "1. Website owner",
+        "content": "Adriana Blanco Durán\nAddress: Conde de Peñalver 15, Madrid, 28006, Spain\nEmail: adriana@mindyourcells.com"
+      },
+      {
+        "title": "2. Purpose",
+        "content": "This legal notice governs the use of the website mindyourcells.com. Use of the website implies full acceptance of the conditions set out herein."
+      },
+      {
+        "title": "3. Professional activity",
+        "content": "Adriana Blanco Durán is a licensed physiotherapist no. 9307. All support offered through this website is presented as a complement to medical treatment, never as a substitute. No diagnoses are made and no treatments are prescribed."
+      },
+      {
+        "title": "4. Intellectual property",
+        "content": "All content on this website (texts, images, design, logos) is the property of Adriana Blanco Durán or third parties who have authorised its use. Reproduction, distribution or public communication without express authorisation is prohibited."
+      },
+      {
+        "title": "5. Disclaimer",
+        "content": "The content of this website is for informational purposes only and does not constitute medical advice. Adriana Blanco Durán accepts no responsibility for decisions made by users based on the information published."
+      },
+      {
+        "title": "6. Applicable law",
+        "content": "This legal notice is governed by Spanish law. For any dispute, the parties submit to the courts and tribunals of Madrid."
+      }
+    ]
+  },
+  "call": {
+    "breadcrumb": "Book a call",
+    "hero": {
+      "heading": "Book your",
+      "headingAccent": "call",
+      "subheading": "Choose the option that best suits where you are right now."
+    },
+    "free": {
+      "tag": "Free · 15 minutes",
+      "heading": "Discovery call",
+      "description": "A first conversation to get to know each other, understand where you are, and see if we are a good fit. No commitment.",
+      "cta": "Book free call"
+    },
+    "paid": {
+      "tag": "Individual consultation · 60 minutes",
+      "heading": "Individual consultation",
+      "description": "An in-depth session to review your situation, identify what is holding you back, and build a personalised action plan.",
+      "cta": "Book consultation"
     }
   }
 }

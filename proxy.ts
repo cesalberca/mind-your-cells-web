@@ -16,9 +16,16 @@ export default function proxy(request: NextRequest) {
     return NextResponse.redirect(CALENDAR_URL)
   }
 
-  // Allow login page through without auth check
-  if (pathname.startsWith('/login')) {
-    return NextResponse.next()
+  // Public routes — skip auth but still run intl middleware for locale routing
+  const isPublic =
+    pathname.startsWith('/login') ||
+    pathname.startsWith('/newsletter/confirm') ||
+    pathname.startsWith('/es/newsletter/confirm') ||
+    pathname === '/links' ||
+    pathname === '/es/links'
+
+  if (isPublic) {
+    return intlMiddleware(request)
   }
 
   // Check auth cookie

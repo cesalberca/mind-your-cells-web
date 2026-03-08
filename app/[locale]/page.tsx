@@ -1,31 +1,10 @@
-import { Header } from '@/components/sections/Header'
-import { Hero } from '@/components/sections/Hero'
-import { Benefits } from '@/components/sections/Benefits'
-import { BrandManifesto } from '@/components/sections/BrandManifesto'
-import { IndividualConsultation } from '@/components/sections/IndividualConsultation'
-import { WhoIsItFor } from '@/components/sections/WhoIsItFor'
-import { Testimonials } from '@/components/sections/Testimonials'
-import { BookCallSection } from '@/components/sections/BookCallSection'
-import { Footer } from '@/components/sections/Footer'
+import { HomePage } from '@/features/home/delivery/home.page'
 
-export default function Home() {
-  return (
-    <main className="min-h-screen bg-cream overflow-x-hidden">
-      <Header />
+type Props = {
+  params: Promise<{ locale: string }>
+}
 
-      <Hero />
-
-      <Benefits />
-
-      <BrandManifesto />
-
-      <WhoIsItFor />
-
-      <Testimonials />
-
-      <BookCallSection />
-
-      <Footer />
-    </main>
-  )
+export default async function Page({ params }: Props) {
+  const { locale } = await params
+  return <HomePage locale={locale} />
 }
