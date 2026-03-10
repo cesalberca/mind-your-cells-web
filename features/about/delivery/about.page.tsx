@@ -1,12 +1,9 @@
 import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
-import { Header } from '@/components/sections/header'
-import { Footer } from '@/components/sections/footer'
+import { Page } from '@/components/page'
 import { BookCallLink } from '@/components/book-call-link'
 import { Link } from '@/components/link'
 import { SubpageHero } from '@/components/sections/subpage-hero'
-
-const TEAM_MEMBERS = ['juanJose', 'maria', 'estrella'] as const
 
 interface Props {
   locale: string
@@ -19,9 +16,7 @@ export async function AboutPage({ locale }: Props) {
   const callHref = locale === 'es' ? '/es/reservar' : '/call'
 
   return (
-    <main className="min-h-screen bg-cream overflow-x-hidden">
-      <Header />
-
+    <Page>
       <SubpageHero
         variant="about"
         breadcrumb={[{ label: 'Home', href: homeHref }, { label: t('breadcrumb') }]}
@@ -60,42 +55,13 @@ export async function AboutPage({ locale }: Props) {
         </div>
       </section>
 
-      {/* Other professionals */}
-      <section className="py-20 px-6 bg-cream">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-light text-stone leading-tight mb-16 max-w-lg">
-            {t('others.heading')}
-          </h2>
-
-          <div className="grid sm:grid-cols-3 gap-10">
-            {TEAM_MEMBERS.map((key) => (
-              <div key={key} className="space-y-3">
-                <div className="aspect-square bg-ceramic/50 rounded-sm overflow-hidden" />
-                <p className="text-stone text-[0.65rem] tracking-widest uppercase font-sans font-medium pt-1">
-                  {t(`others.members.${key}.name`)}
-                </p>
-                <p className="text-soft-terracotta text-[0.6rem] tracking-widest uppercase font-sans">
-                  {t(`others.members.${key}.specialty`)}
-                </p>
-                <p className="text-stone/55 text-sm font-sans leading-relaxed">
-                  {t(`others.members.${key}.description`)}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="relative min-h-[60vh] flex items-center justify-center rounded-2xl overflow-hidden mx-4 mb-4">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: "url('/images/home-3.png')" }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/home-3.png')" }} />
         <div className="absolute inset-0 bg-stone/70" />
 
         <div className="relative z-10 text-center max-w-3xl mx-auto px-6 py-24">
-          <p className="text-3xl sm:text-4xl md:text-5xl font-light text-ceramic leading-relaxed mb-10 font-display">
+          <p className="text-3xl sm:text-4xl md:text-4xl font-light text-ceramic leading-relaxed mb-10 font-display">
             {t('cta.quote1')}
             <br />
             {t('cta.quote2')}
@@ -108,8 +74,6 @@ export async function AboutPage({ locale }: Props) {
           <p className="text-ceramic/20 text-[0.6rem] tracking-widest uppercase font-sans mt-16">MYC</p>
         </div>
       </section>
-
-      <Footer />
-    </main>
+    </Page>
   )
 }

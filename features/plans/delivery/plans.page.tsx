@@ -1,6 +1,5 @@
 import { getTranslations } from 'next-intl/server'
-import { Header } from '@/components/sections/header'
-import { Footer } from '@/components/sections/footer'
+import { Page } from '@/components/page'
 import { Packages } from '@/components/sections/packages'
 import { IndividualConsultation } from '@/components/sections/individual-consultation'
 import { FAQ } from '@/components/sections/faq'
@@ -24,9 +23,7 @@ export async function PlansPage({ locale }: Props) {
   const homeHref = locale === 'es' ? '/es' : '/'
 
   return (
-    <main className="min-h-screen bg-cream overflow-x-hidden">
-      <Header />
-
+    <Page>
       <SubpageHero
         variant="plans"
         breadcrumb={[{ label: 'Home', href: homeHref }, { label: t('breadcrumb') }]}
@@ -188,7 +185,6 @@ export async function PlansPage({ locale }: Props) {
         </div>
       </section>
 
-      <Footer />
-    </main>
+    </Page>
   )
 }

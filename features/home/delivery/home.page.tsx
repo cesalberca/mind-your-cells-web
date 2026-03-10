@@ -1,4 +1,3 @@
-import { Header } from '@/components/sections/header'
 import { Hero } from '@/components/sections/hero'
 import { Benefits } from '@/components/sections/benefits'
 import { BrandManifesto } from '@/components/sections/brand-manifesto'
@@ -6,7 +5,7 @@ import { IndividualConsultation } from '@/components/sections/individual-consult
 import { WhoIsItFor } from '@/components/sections/who-is-it-for'
 import { Testimonials } from '@/components/sections/testimonials'
 import { BookCallSection } from '@/components/sections/book-call-section'
-import { Footer } from '@/components/sections/footer'
+import { Page } from '@/components/page'
 
 interface Props {
   locale: string
@@ -14,9 +13,7 @@ interface Props {
 
 export function HomePage({ locale }: Props) {
   return (
-    <main className="min-h-screen bg-cream overflow-x-hidden">
-      <Header />
-
+    <Page>
       <Hero />
 
       <Benefits />
@@ -28,8 +25,6 @@ export function HomePage({ locale }: Props) {
       <Testimonials />
 
       <BookCallSection />
-
-      <Footer />
-    </main>
+    </Page>
   )
 }

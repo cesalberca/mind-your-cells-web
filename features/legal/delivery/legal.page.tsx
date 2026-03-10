@@ -1,6 +1,5 @@
 import { getTranslations } from 'next-intl/server'
-import { Header } from '@/components/sections/header'
-import { Footer } from '@/components/sections/footer'
+import { Page } from '@/components/page'
 import { Breadcrumb } from '@/components/breadcrumb'
 
 type Section = { title: string; content: string }
@@ -14,9 +13,7 @@ export async function LegalPage({ locale }: Props) {
   const sections = t.raw('sections') as Section[]
 
   return (
-    <main className="min-h-screen bg-cream overflow-x-hidden">
-      <Header />
-
+    <Page>
       <section className="pt-32 pb-24 px-6">
         <div className="max-w-3xl mx-auto">
           <Breadcrumb
@@ -41,8 +38,6 @@ export async function LegalPage({ locale }: Props) {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </main>
+    </Page>
   )
 }

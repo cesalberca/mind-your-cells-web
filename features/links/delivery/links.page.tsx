@@ -1,7 +1,12 @@
-import Image from 'next/image'
-import { Mail, Instagram, Linkedin } from 'lucide-react'
+import { Mail, Instagram, Linkedin, Globe } from 'lucide-react'
+import { Page } from '@/components/page'
 
 const LINKS = [
+  {
+    title: 'mindyourcells.com',
+    href: 'https://www.mindyourcells.com',
+    icon: Globe,
+  },
   {
     title: 'Instagram',
     href: 'https://www.instagram.com/mindyourcells/',
@@ -21,13 +26,9 @@ const LINKS = [
 
 export function LinksPage() {
   return (
-    <main className="min-h-screen bg-cream flex flex-col items-center justify-center px-6 py-16">
-      <div className="w-full max-w-sm flex flex-col items-center gap-10">
-        {/* Logo */}
-        <Image src="/logo.svg" alt="Mind Your Cells" width={160} height={14} />
-
-        {/* Links */}
-        <div className="w-full flex flex-col gap-3">
+    <Page>
+      <div className="flex flex-col items-center justify-center px-6 py-16 pt-28">
+        <div className="w-full max-w-sm flex flex-col gap-3">
           {LINKS.map(({ title, href, icon: Icon }) => (
             <a
               key={title}
@@ -41,9 +42,7 @@ export function LinksPage() {
             </a>
           ))}
         </div>
-
-        <p className="text-stone/25 text-[0.6rem] tracking-widest uppercase font-sans">MYC</p>
       </div>
-    </main>
+    </Page>
   )
 }

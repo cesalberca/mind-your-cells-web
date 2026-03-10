@@ -28,10 +28,6 @@ export function Testimonials() {
           {items.map((item, i) => (
             // biome-ignore lint/suspicious/noArrayIndexKey: static testimonial cards
             <div key={i} className="flex flex-col">
-              <div className="w-14 h-14 rounded-full bg-stone/15 flex items-center justify-center mb-6 flex-shrink-0">
-                <span className="text-stone/50 text-base font-light font-sans">{item.initials}</span>
-              </div>
-
               <p className="text-stone/65 text-sm italic leading-relaxed mb-8 font-serif flex-1">{item.quote}</p>
 
               <p className="text-stone/35 text-[0.6rem] font-sans tracking-widest uppercase">{item.name}</p>

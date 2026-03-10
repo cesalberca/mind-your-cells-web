@@ -1,8 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { Header } from '@/components/sections/header'
-import { Footer } from '@/components/sections/footer'
+import { Page } from '@/components/page'
 import { trackGoal } from '@/lib/fathom-goals'
 
 const FREE_CALL_URL = 'https://calendar.app.google/yytTRx1Xr5C17CtY8'
@@ -12,9 +11,7 @@ export function CallPage() {
   const t = useTranslations('call')
 
   return (
-    <main className="min-h-screen bg-cream overflow-x-hidden">
-      <Header />
-
+    <Page>
       <section className="pt-32 pb-24 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="space-y-4 mb-16">
@@ -74,8 +71,6 @@ export function CallPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </main>
+    </Page>
   )
 }
