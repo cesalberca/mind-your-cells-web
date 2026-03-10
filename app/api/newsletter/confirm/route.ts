@@ -50,9 +50,9 @@ export async function POST(request: NextRequest): Promise<NextResponse<ConfirmRe
       return NextResponse.json({ success: false, error: 'Email mismatch' }, { status: 400 })
     }
 
-    const audienceId = process.env.RESEND_AUDIENCE_ID
+    const audienceId = process.env.RESEND_SEGMENT_ID
     if (!audienceId) {
-      return NextResponse.json({ success: false, error: 'Audience not configured' }, { status: 500 })
+      return NextResponse.json({ success: false, error: 'Segment not configured' }, { status: 500 })
     }
 
     // Check if already subscribed

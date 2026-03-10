@@ -9,6 +9,7 @@ export const routing = defineRouting({
   // Default locale (EN) is served without a prefix at `/`, `/about-us`, etc.
   // Spanish uses its prefix: `/es/`, `/es/nosotros`, etc.
   localePrefix: 'as-needed',
+  localeDetection: false,
   pathnames: {
     '/about-us': {
       es: '/nosotros',

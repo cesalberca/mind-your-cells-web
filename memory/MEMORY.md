@@ -21,7 +21,7 @@
 - **Italics rule**: ONLY for single emphasis words via `<em>` or `<i>`, never full sentences or titles
 - **Analytics**: Fathom `trackGoal()` on all CTAs — goals in `lib/fathom-goals.ts`
 - **Email**: Resend (`resend` npm package) — double opt-in with JWT confirmation
-- **Env vars**: `RESEND_API_KEY`, `RESEND_AUDIENCE_ID`, `JWT_SECRET`, `RESEND_EMAIL_FROM`, `NEXT_PUBLIC_URL`
+- **Env vars**: `RESEND_API_KEY`, `RESEND_SEGMENT_ID`, `JWT_SECRET`, `RESEND_EMAIL_FROM`, `NEXT_PUBLIC_URL`
 
 ## Brand Colors (Tailwind v4)
 - `stone` #333233, `stone-light` #3d3b3c
