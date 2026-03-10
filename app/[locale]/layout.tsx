@@ -89,6 +89,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: t('brand'),
       locale: isEs ? 'es_ES' : 'en_US',
       type: 'website',
+      images: [
+        {
+          url: '/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'Mind Your Cells',
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
@@ -96,10 +104,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: isEs
         ? 'Optimización Celular · Salud Integrativa · PNIE'
         : 'Cellular Optimization · Integrative Health · PNEI',
+      images: ['/og-image.png'],
     },
     robots: {
-      index: false,
-      follow: false,
+      index: true,
+      follow: true,
     },
     alternates: {
       canonical: isEs ? 'https://www.mindyourcells.com/es' : 'https://www.mindyourcells.com',

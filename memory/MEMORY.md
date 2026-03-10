@@ -3,7 +3,7 @@
 ## Project Overview
 - Landing page for Adriana Blanco Durán's wellness coaching brand "Mind Your Cells"
 - Next.js 16.1.6, App Router, Turbopack, next-intl v4, Tailwind CSS v4
-- Password protected (`myc2026`), no-index robots.txt, `/chat` → Google Calendar redirect
+- Public (no password), indexable, `/chat` → Google Calendar redirect, sitemap at `/sitemap.xml`
 - Booking URL: `https://calendar.app.google/yytTRx1Xr5C17CtY8`
 
 ## Tech Stack
@@ -47,7 +47,6 @@
 - `app/[locale]/privacy-policy/page.tsx` → imports `PrivacyPage` from `features/privacy/delivery/privacy.page`
 - `app/[locale]/legal-notice/page.tsx` → imports `LegalPage` from `features/legal/delivery/legal.page`
 - `app/[locale]/newsletter/confirm/page.tsx` → imports `NewsletterConfirmPage`
-- `app/login/page.tsx` → imports `LoginPage` from `features/auth/delivery/login.page`
 - `app/api/newsletter/route.ts` — sends JWT confirmation email (double opt-in)
 - `app/api/newsletter/confirm/route.ts` — verifies JWT, adds to Resend audience
 
@@ -57,7 +56,6 @@
 - `features/plans/delivery/plans.page.tsx` (component: `PlansPage`)
 - `features/privacy/delivery/privacy.page.tsx` (component: `PrivacyPage`)
 - `features/legal/delivery/legal.page.tsx` (component: `LegalPage`)
-- `features/auth/delivery/login.page.tsx` (component: `LoginPage`)
 - `features/newsletter/delivery/newsletter-form.tsx` (imported by footer)
 - `features/newsletter/delivery/newsletter-confirm.page.tsx`
 - `features/newsletter/confirm/post-confirm-tasks.ts` — sends welcome email after confirm
