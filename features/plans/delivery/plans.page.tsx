@@ -60,7 +60,7 @@ export async function PlansPage({ locale }: Props) {
               <p className="text-stone/35 text-xs font-sans leading-relaxed italic">
                 {t('options.individual.note')}
               </p>
-              <BookCallLink size="sm" variant="light" goal="bookCallIndividual" className="self-end">
+              <BookCallLink size="sm" variant="light" goal="bookCallIndividual" type="consultation" className="self-end">
                 {t('options.individual.cta')}
               </BookCallLink>
             </div>

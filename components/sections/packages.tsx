@@ -81,6 +81,7 @@ export function Packages() {
                 size="md"
                 variant="light"
                 goal="bookCallPackage"
+                type="consultation"
                 className="justify-center w-full text-center"
               >
                 {t('cta')}

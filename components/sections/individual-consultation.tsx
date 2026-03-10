@@ -51,6 +51,7 @@ export function IndividualConsultation() {
                 size="md"
                 variant="light"
                 goal="bookCallIndividual"
+                type="consultation"
                 className="justify-center text-center w-full"
               >
                 {t('session.cta')}

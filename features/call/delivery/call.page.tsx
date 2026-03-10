@@ -5,7 +5,7 @@ import { Page } from '@/components/page'
 import { trackGoal } from '@/lib/fathom-goals'
 
 const FREE_CALL_URL = 'https://calendar.app.google/yytTRx1Xr5C17CtY8'
-const PAID_CALL_URL = 'https://calendar.app.google/yytTRx1Xr5C17CtY8' // TODO: replace with 1-hour consultation URL
+const PAID_CALL_URL = 'https://calendar.app.google/mRrTpyirUuadiLq49'
 
 export function CallPage() {
   const t = useTranslations('call')
