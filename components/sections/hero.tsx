@@ -13,10 +13,10 @@ export function Hero() {
   return (
     <section className="min-h-screen flex flex-col justify-center px-6 pt-20 pb-16">
       <div className="max-w-6xl mx-auto w-full">
-        <div className="grid md:grid-cols-[2fr_3fr] gap-12 lg:gap-16 items-center">
+        <div className="grid md:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-center">
           {/* Left: Text content */}
-          <div>
-            <h1 className="text-4xl xl:text-5xl leading-[1.05] text-stone">
+          <div className="@container">
+            <h1 className="text-[clamp(1.5rem,8cqi,3.5rem)] leading-[1.05] text-stone">
               <span className="block">{t('headline')}</span>
               <span className="block">{t('headlineAccent')}</span>
             </h1>
