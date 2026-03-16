@@ -559,5 +559,15 @@
       "description": "Una sesión en profundidad para analizar tu situación, identificar bloqueos y establecer un plan de acción personalizado.",
       "cta": "Reservar consulta"
     }
+  },
+  "links": {
+    "description": "Fisioterapeuta · PNIE · Osteopatía · Optimización celular",
+    "share": "Compartir",
+    "links": {
+      "website": "mindyourcells.com",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "email": "adriana@mindyourcells.com"
+    }
   }
 }

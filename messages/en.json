@@ -559,5 +559,15 @@
       "description": "An in-depth session to review your situation, identify what is holding you back, and build a personalised action plan.",
       "cta": "Book consultation"
     }
+  },
+  "links": {
+    "description": "Physiotherapist · PNEI · Osteopathy · Cellular optimisation",
+    "share": "Share",
+    "links": {
+      "website": "mindyourcells.com",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "email": "adriana@mindyourcells.com"
+    }
   }
 }
