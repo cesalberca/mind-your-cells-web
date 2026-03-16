@@ -34,11 +34,9 @@ export async function PlansPage({ locale }: Props) {
       />
 
       {/* Plans cards */}
-      <section id="planes" className="py-24 px-6 bg-cream">
+      <section id="planes" className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-light text-stone mb-12">
-            {t('options.heading')}
-          </h2>
+          <h2 className="text-3xl sm:text-4xl font-light text-stone mb-12">{t('options.heading')}</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             {/* Individual */}
@@ -46,9 +44,7 @@ export async function PlansPage({ locale }: Props) {
               <p className="text-stone/40 text-[0.6rem] tracking-widest uppercase font-sans">
                 {t('options.individual.tag')}
               </p>
-              <p className="text-stone/70 text-sm font-sans leading-relaxed">
-                {t('options.individual.intro')}
-              </p>
+              <p className="text-stone/70 text-sm font-sans leading-relaxed">{t('options.individual.intro')}</p>
               <ul className="space-y-2.5 flex-1">
                 {individualFeatures.map((f) => (
                   <li key={f} className="flex items-start gap-3">
@@ -57,10 +53,14 @@ export async function PlansPage({ locale }: Props) {
                   </li>
                 ))}
               </ul>
-              <p className="text-stone/35 text-xs font-sans leading-relaxed italic">
-                {t('options.individual.note')}
-              </p>
-              <BookCallLink size="sm" variant="light" goal="bookCallIndividual" type="consultation" className="self-end">
+              <p className="text-stone/35 text-xs font-sans leading-relaxed italic">{t('options.individual.note')}</p>
+              <BookCallLink
+                size="sm"
+                variant="light"
+                goal="bookCallIndividual"
+                type="consultation"
+                className="self-end"
+              >
                 {t('options.individual.cta')}
               </BookCallLink>
             </div>
@@ -70,9 +70,7 @@ export async function PlansPage({ locale }: Props) {
               <p className="text-stone/40 text-[0.6rem] tracking-widest uppercase font-sans">
                 {t('options.premium.tag')}
               </p>
-              <p className="text-stone/70 text-sm font-sans leading-relaxed">
-                {t('options.premium.intro')}
-              </p>
+              <p className="text-stone/70 text-sm font-sans leading-relaxed">{t('options.premium.intro')}</p>
               <ul className="space-y-2.5 flex-1">
                 {premiumFeatures.map((f) => (
                   <li key={f} className="flex items-start gap-3">
@@ -97,11 +95,9 @@ export async function PlansPage({ locale }: Props) {
       <IndividualConsultation />
 
       {/* Process */}
-      <section className="py-24 px-6 bg-cream">
+      <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto space-y-16">
-          <h2 className="text-3xl sm:text-4xl font-light text-stone">
-            {t('process.heading')}
-          </h2>
+          <h2 className="text-3xl sm:text-4xl font-light text-stone">{t('process.heading')}</h2>
 
           {/* During */}
           <div className="space-y-10">
@@ -118,14 +114,10 @@ export async function PlansPage({ locale }: Props) {
                 <div key={step.title} className="space-y-5">
                   <div className="space-y-2">
                     <span className="block text-stone/30 text-[0.6rem] font-sans tracking-wider">{i + 1}</span>
-                    <div className="w-3 h-3 rounded-full border border-soft-terracotta bg-cream relative z-10" />
+                    <div className="w-3 h-3 rounded-full border border-soft-terracotta relative z-10" />
                   </div>
-                  <h3 className="text-stone text-base font-light leading-snug pt-2">
-                    {step.title}
-                  </h3>
-                  <p className="text-stone/50 text-sm font-sans leading-relaxed">
-                    {step.description}
-                  </p>
+                  <h3 className="text-stone text-base font-light leading-snug pt-2">{step.title}</h3>
+                  <p className="text-stone/50 text-sm font-sans leading-relaxed">{step.description}</p>
                 </div>
               ))}
             </div>
@@ -150,7 +142,7 @@ export async function PlansPage({ locale }: Props) {
       <FAQ />
 
       {/* CTA dark section */}
-      <section className="py-8 bg-cream">
+      <section className="py-8">
         <div className="px-4 sm:px-6">
           <div className="rounded-3xl overflow-hidden relative min-h-[70vh] flex flex-col items-center justify-center">
             {/* Background image */}
@@ -184,7 +176,6 @@ export async function PlansPage({ locale }: Props) {
           </div>
         </div>
       </section>
-
     </Page>
   )
 }

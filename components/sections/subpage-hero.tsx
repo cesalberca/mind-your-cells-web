@@ -7,7 +7,7 @@ const SCUTOID_PATH =
 
 const SHAPE_COLORS = {
   plans: { top: '#682e2c', bottom: '#f5f0eb' },
-  about: { top: '#9c9690',  bottom: '#f5f0eb' },
+  about: { top: '#9c9690', bottom: '#f5f0eb' },
 }
 
 interface BreadcrumbItem {
@@ -29,7 +29,7 @@ export function SubpageHero({ variant, breadcrumb, heading, headingAccent, subhe
   const { top, bottom } = SHAPE_COLORS[variant]
 
   return (
-    <section className="pt-28 pb-16 px-6 bg-cream">
+    <section className="pt-28 pb-16 px-6">
       <div className="max-w-6xl mx-auto">
         <Breadcrumb items={breadcrumb} className="mb-12" />
 

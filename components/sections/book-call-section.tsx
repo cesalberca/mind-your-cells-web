@@ -6,7 +6,7 @@ export function BookCallSection() {
   const t = useTranslations('bookCall')
 
   return (
-    <section id="book-call" className="py-8 bg-cream">
+    <section id="book-call" className="py-8">
       <RoundedCard className="relative min-h-[80vh] flex items-center justify-center">
         {/* Parallax background */}
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/home-3.png')" }} />

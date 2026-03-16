@@ -38,7 +38,7 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         hidden ? '-translate-y-full' : 'translate-y-0'
-      } ${scrolled ? 'bg-cream/95 backdrop-blur-md border-b border-stone/8' : 'bg-transparent'}`}
+      } ${scrolled ? 'backdrop-blur-md border-b border-stone/8' : 'bg-transparent'}`}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-14">
         <a href={homeHref} className="flex items-center">
