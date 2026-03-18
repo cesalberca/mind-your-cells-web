@@ -1,0 +1,5 @@
+{
+  "name": "mind-your-cells-giveaway",
+  "main": "party/giveaway.ts",
+  "compatibilityDate": "2023-11-10"
+}

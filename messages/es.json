@@ -569,5 +569,50 @@
       "linkedin": "LinkedIn",
       "email": "adriana@mindyourcells.com"
     }
+  },
+  "giveaway": {
+    "title": "Sorteo",
+    "subtitle": "Participa en nuestro sorteo exclusivo. Rellena tu nombre y email para unirte.",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "submit": "Participar en el sorteo",
+      "finePrint": "Al participar, tu email quedará registrado en la newsletter de Mind Your Cells. Recibirás un correo de confirmación para activar tu suscripción. Puedes darte de baja en cualquier momento."
+    },
+    "joined": {
+      "title": "¡Ya estás participando!",
+      "subtitle": "Buena suerte en el sorteo.",
+      "leave": "Retirar mi participación"
+    },
+    "participants": {
+      "title": "Participantes ({count})",
+      "empty": "Aún no hay participantes.",
+      "leave": "Salir"
+    },
+    "countdown": {
+      "about": "El sorteo está a punto de comenzar"
+    },
+    "winner": {
+      "label": "Resultado del sorteo",
+      "reset": "Reiniciar sorteo",
+      "backHome": "Volver al inicio"
+    },
+    "admin": {
+      "title": "Sorteo — Backoffice",
+      "logout": "Salir",
+      "reset": "Reiniciar sorteo",
+      "draw": "Iniciar sorteo",
+      "participantsTitle": "Participantes ({count})",
+      "noParticipants": "No hay participantes aún.",
+      "kick": "Expulsar"
+    },
+    "login": {
+      "title": "Acceso backoffice",
+      "passwordPlaceholder": "Contraseña",
+      "submit": "Entrar",
+      "error": "Contraseña incorrecta."
+    }
   }
 }

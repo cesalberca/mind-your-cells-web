@@ -569,5 +569,50 @@
       "linkedin": "LinkedIn",
       "email": "adriana@mindyourcells.com"
     }
+  },
+  "giveaway": {
+    "title": "Giveaway",
+    "subtitle": "Enter our exclusive giveaway. Fill in your name and email to participate.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "submit": "Enter the giveaway",
+      "finePrint": "By entering, your email will be added to the Mind Your Cells newsletter. You will receive a confirmation email to activate your subscription. You can unsubscribe at any time."
+    },
+    "joined": {
+      "title": "You're in!",
+      "subtitle": "Good luck in the giveaway.",
+      "leave": "Withdraw my entry"
+    },
+    "participants": {
+      "title": "Participants ({count})",
+      "empty": "No participants yet.",
+      "leave": "Leave"
+    },
+    "countdown": {
+      "about": "The giveaway is about to start"
+    },
+    "winner": {
+      "label": "Giveaway result",
+      "reset": "Restart giveaway",
+      "backHome": "Back to home"
+    },
+    "admin": {
+      "title": "Giveaway — Backoffice",
+      "logout": "Log out",
+      "reset": "Restart giveaway",
+      "draw": "Start giveaway",
+      "participantsTitle": "Participants ({count})",
+      "noParticipants": "No participants yet.",
+      "kick": "Remove"
+    },
+    "login": {
+      "title": "Backoffice access",
+      "passwordPlaceholder": "Password",
+      "submit": "Enter",
+      "error": "Incorrect password."
+    }
   }
 }

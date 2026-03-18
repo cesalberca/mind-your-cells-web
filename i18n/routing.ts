@@ -11,6 +11,7 @@ export const routing = defineRouting({
   localePrefix: 'as-needed',
   localeDetection: false,
   pathnames: {
+    '/': '/',
     '/about-us': {
       es: '/nosotros',
     },
