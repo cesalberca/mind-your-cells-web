@@ -16,6 +16,14 @@ export default function proxy(request: NextRequest) {
     return NextResponse.redirect(CALENDAR_URL)
   }
 
+  if (pathname === '/new-patient') {
+    return NextResponse.redirect('https://www.notion.so/mindyourcells/33779f403f0881158464d78da4364485?pvs=106')
+  }
+
+  if (pathname === '/nuevo-paciente') {
+    return NextResponse.redirect('https://www.notion.so/mindyourcells/2c179f403f08810fa808c6d755171469?pvs=106')
+  }
+
   if (pathname === '/informed-consent') {
     return NextResponse.redirect(INFORMED_CONSENT_EN)
   }
