@@ -104,7 +104,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: isEs
         ? 'Optimización Celular · Salud Integrativa · PNIE'
         : 'Cellular Optimization · Integrative Health · PNEI',
-      images: ['/og-image.jpg'],
+      images: ['/opengraph-image.jpg'],
     },
     robots: {
       index: true,
