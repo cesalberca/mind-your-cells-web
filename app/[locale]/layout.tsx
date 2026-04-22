@@ -91,7 +91,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'website',
       images: [
         {
-          url: '/og-image.png',
+          url: '/og-image.jpg',
           width: 1200,
           height: 630,
           alt: 'Mind Your Cells',
@@ -104,7 +104,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: isEs
         ? 'Optimización Celular · Salud Integrativa · PNIE'
         : 'Cellular Optimization · Integrative Health · PNEI',
-      images: ['/og-image.png'],
+      images: ['/og-image.jpg'],
     },
     robots: {
       index: true,
