@@ -19,7 +19,7 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/historia-medica-detallada',
+        source: '/historia-clinica-detallada',
         destination: 'https://mindyourcells.notion.site/2c179f403f08810fa808c6d755171469',
         permanent: true,
       },
