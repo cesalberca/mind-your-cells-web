@@ -1,8 +1,9 @@
 import createNextIntlPlugin from 'next-intl/plugin'
+import type { NextConfig } from 'next'
 
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts')
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   experimental: {
     viewTransition: true,
   },
@@ -31,6 +32,16 @@ const nextConfig = {
       {
         source: '/consentimiento-informado',
         destination: 'https://mindyourcells.notion.site/33379f403f0881748e65e02f6def1589',
+        permanent: true,
+      },
+      {
+        source: '/formulario-de-seguimiento',
+        destination: 'https://mindyourcells.notion.site/34a79f403f0881a4a450ce2fadd34487',
+        permanent: true,
+      },
+      {
+        source: '/follow-up-form',
+        destination: 'https://mindyourcells.notion.site/34a79f403f0881c7bef0da5d3636d596',
         permanent: true,
       },
     ]
